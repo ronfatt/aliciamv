@@ -25,6 +25,13 @@ export default function CharacterRoster({ characters }) {
             </p>
           </div>
         </div>
+        <a 
+          href="#wardrobe-fitting-section" 
+          className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-medium transition-all hover:scale-[1.02] shrink-0"
+        >
+          <span>换装后视觉效果 (5人独立)</span>
+          <span className="text-amber-400 font-mono">↓</span>
+        </a>
       </div>
 
       {/* 5 位主角横向卡片流 */}

@@ -8,6 +8,7 @@ import FeedbackDrawer from './components/FeedbackDrawer';
 import NewSceneModal from './components/NewSceneModal';
 import LyricsModal from './components/LyricsModal';
 import CharacterRoster from './components/CharacterRoster';
+import CharacterWardrobeFitting from './components/CharacterWardrobeFitting';
 import EnvironmentGallery from './components/EnvironmentGallery';
 import WardrobeReviewModal from './components/WardrobeReviewModal';
 import { initialProjectData } from './data/projectData';
@@ -333,6 +334,9 @@ export default function App() {
 
         {/* 5位主角人物设定与多视图参考资产库 */}
         <CharacterRoster characters={initialProjectData.characters} />
+
+        {/* MC主角人物设定资产 - 换装后独立视觉效果库 (第一套工装 / 第二套旗袍) */}
+        <CharacterWardrobeFitting />
 
         {/* 5大核心概念场景美术馆 */}
         <EnvironmentGallery environments={initialProjectData.environments} />
