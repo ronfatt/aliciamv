@@ -1,4 +1,5 @@
 // Alicia & Real Stories — 《点燃心灯 (Light It Up!)》新春贺岁大爱 MV 官方全流程数据
+// 音频严密对齐 4:49 (289s) 真实官方音轨
 
 export const initialProjectData = {
   info: {
@@ -6,11 +7,11 @@ export const initialProjectData = {
     subtitle: "传统文化与潮流国潮碰撞 · 跨南洋深海的大爱心灯",
     director: "Ron Studio / AI Production",
     client: "新春大爱传承组委会",
-    currentVersion: "v3.0 - AI 生产分镜工单标准版",
+    currentVersion: "v3.5 - 官方音频与全片 9 镜秒数对齐版",
     aspectRatio: "16:9 Cinematic (2.39:1)",
-    totalDuration: 225, // 3:45
+    totalDuration: 289, // 真实音频 4分49秒
     bpm: 122,
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    audioSrc: "/audio/official_track.mp3",
     productionPipeline: [
       { step: "01", name: "角色与妆造", desc: "Alicia(京腔)/Coco(潮酷)/Kitty/茵茵/Sam 5人锁定" },
       { step: "02", name: "服装二选一", desc: "嘻哈工装(红韵/红潮) & 盛典旗袍(和韵/金韵)" },
@@ -222,17 +223,17 @@ export const initialProjectData = {
 
   // 严格根据用户生产公式排布的分镜工单卡：
   // 歌词分段 + 场景建议 + 参与人物 = 我生成的画面效果图/视频 (附画面要求描述)
+  // 秒数完全精准契合 04:49 官方音频！
   scenes: [
     {
       id: "SC-001",
       number: 1,
       title: "【Intro 序章】龙鼓大院水浸红绸 · 惊艳京腔开门红",
-      timecode: "00:00 - 00:25",
+      timecode: "00:00 - 00:39",
       startSec: 0,
-      endSec: 25,
+      endSec: 39,
 
-      // 用户核心公式 4 要素
-      lyricsSnippet: "Coco: 'Yeah, light it up!'\nKitty: '新年到'\n茵茵 & Sam: 'You know what to do'\nAlicia (京腔): '红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！'",
+      lyricsSnippet: "Coco: 'Yeah, light it up!' (00:03)\nKitty: '新年到' (00:06)\n茵茵 & Sam: 'You know what to do' (00:08)\nAlicia (京腔): '红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！' (00:12-00:26)",
       singerHighlight: "Alicia (京腔主唱) · Coco · Kitty · 茵茵 · Sam",
       suggestedEnvironment: "华灯古楼 · 龙鼓大院水浸红绸",
       environmentId: "env_04",
@@ -242,14 +243,12 @@ export const initialProjectData = {
       ],
       wardrobeNote: "Alicia 灰西装撞色传统红灯笼 / Coco 选定《红韵》嘻哈工装",
 
-      // 画面要求与导演描述 (Visual Directives)
       visualRequirements: [
         "构图与机位：广角低机位贴着湿漉漉的石阶水面快速向前推，水面倒映两层古楼的通明灯火与大红战鼓",
         "角色表演：Alicia 站在大院正中央昂首开唱京腔，神态端庄自信，手势精准还原京剧旦角手势",
         "光影与特效：雨后青石板的潮湿高光与屋檐下串排的大红灯笼形成强烈冷暖反差，红色长绸缎在微风中翻卷"
       ],
 
-      // 我生成的画面效果图/视频 (Generated Result)
       generatedOutput: {
         type: "image",
         imageUrl: "/environments/env_04_drum_courtyard.jpg",
@@ -293,7 +292,7 @@ export const initialProjectData = {
         {
           id: "fb-401",
           author: "Ron (Director)",
-          date: "2026-09-20 22:55",
+          date: "2026-09-20 22:45",
           tag: "场景与歌词对齐",
           content: "龙鼓大院水面倒影配合京腔起调，视听冲击力极大，确认定稿！",
           resolved: true
@@ -303,37 +302,37 @@ export const initialProjectData = {
     {
       id: "SC-002",
       number: 2,
-      title: "【Verse 1 民俗与根脉】水墨飞白书斋 · 鞭炮、舞狮与敬茶传承",
-      timecode: "00:25 - 00:50",
-      startSec: 25,
-      endSec: 50,
+      title: "【Verse 1 民俗与根脉】鞭炮破空、醒狮鼓声与红包祝福",
+      timecode: "00:39 - 01:08",
+      startSec: 39,
+      endSec: 68,
 
-      lyricsSnippet: "Sam: '穿破天空的鞭炮，那是世代的记号'\nCoco: '舞狮鼓声传千里，We never lay low'\n茵茵: '红包里的祝福，装满期待把你当成宝'\nKitty: '外面的风浪再大，根脉依然在心底绕'",
+      lyricsSnippet: "Sam: '穿破天空的鞭炮，那是世代的记号' (00:40)\nCoco: '舞狮鼓声传千里，We never lay low' (00:48)\n茵茵: '红包里的祝福，装满期待把你当成宝' (00:55)\nKitty: '外面的风浪再大，根脉依然在心底绕' (01:02)",
       singerHighlight: "Sam · Coco · 茵茵 · Kitty",
-      suggestedEnvironment: "水墨狂草 · 阳光书斋飞白长卷",
-      environmentId: "env_05",
+      suggestedEnvironment: "华灯古楼 · 龙鼓大院 (外景醒狮舞台)",
+      environmentId: "env_04",
       participatingCast: [
-        { name: "Kitty", role: "宗族根脉与敬茶核心 (沉稳从容)" },
-        { name: "Sam & Coco", role: "醒狮鼓点与跳跃动感" }
+        { name: "Sam & Coco", role: "醒狮鼓点卡点跳跃与街舞 Low Stance" },
+        { name: "茵茵 & Kitty", role: "双手送出精美烫金红包，温情凝望" }
       ],
-      wardrobeNote: "Kitty 选定《金韵华裳》旗袍 / Coco 选定《红韵》工装",
+      wardrobeNote: "Coco/Sam 换装《红韵》嘻哈工装 / 茵茵 Kitty 着《金韵华裳》旗袍",
 
       visualRequirements: [
-        "构图与机位：镜头从室外灿烂阳光穿透雕花木门，滑轨缓缓滑过悬挂空中的巨幅水墨狂草白绢",
-        "角色表演：Kitty 坐在古色古香的长案前，双手执青瓷茶盏，眼神坚毅有神，带出‘根脉在心底绕’的庄重",
-        "光影与特效：丁达尔晨曦光柱（God Rays）斜切画堂，空气中漂浮着金色微尘与淡淡水墨香气"
+        "构图与机位：快节奏卡点剪辑（122 BPM），鞭炮金光炸裂后快速鞭甩镜头到醒狮眨眼特写",
+        "角色表演：Coco 戴翡翠项链双手摆出街舞手势，与身后跳桩醒狮完美互动；茵茵端庄递出红包，眼神充满关爱",
+        "光影与特效：金色礼花火星飞散，醒狮绒毛在暖光下生动细腻，青石板水花随舞步四溅"
       ],
 
       generatedOutput: {
         type: "image",
-        imageUrl: "/environments/env_05_ink_calligraphy.jpg",
-        caption: "AI 最终生成效果图：阳光书斋飞白狂草长卷与案头热茶",
-        modelEngine: "Midjourney v6.1",
+        imageUrl: "/environments/env_04_drum_courtyard.jpg",
+        caption: "AI 最终生成效果图：醒狮与红韵工装街舞在大院战鼓前卡点爆发",
+        modelEngine: "Flux.1 Pro",
         aspectRatio: "16:9 4K Cinema"
       },
 
-      cameraMotion: "Smooth lateral tracking through billowing calligraphy scrolls into warm tea table",
-      lighting: "Volumetric morning sunlight god rays piercing through ancient paper screens",
+      cameraMotion: "Dynamic whip pan from golden spark burst to Coco's low stance hip-hop groove",
+      lighting: "Golden fireworks sparkle, warm festive courtyard lanterns",
       status: "approved",
       aspectRatio: "16:9",
 
@@ -341,20 +340,84 @@ export const initialProjectData = {
         stage1_prompt: {
           title: "Prompt 提示词与指令",
           model: "Flux.1 Pro",
-          prompt: "Cinematic shot inside ancient Chinese calligraphy study hall, massive white silk scrolls with wild cursive ink calligraphy hanging from wooden beams, golden morning sunlight beams shining through open door, antique tea desk, Kitty and Yin Yin --ar 16:9",
-          notes: "展现南洋华人代代相传的文化根基。"
+          prompt: "Cinematic shot of dynamic Chinese New Year street celebration with traditional lion dance troupe, Asian dancer in red contemporary streetwear, flying golden firework embers, wet reflective pavement --ar 16:9",
+          notes: "传统民俗与现代街舞激烈碰撞。"
         },
         stage2_keyframe: {
           title: "出镜人物参考表",
           mediaType: "image",
-          mediaUrl: "/characters/char_04_mature_cool.jpg",
-          notes: "Kitty 笃定眼神与立领长裙基准。"
+          mediaUrl: "/characters/char_03_coco.jpg",
+          notes: "Coco 拳击辫与翡翠挂坠标志。"
+        },
+        stage3_motion: {
+          title: "动态推演样片",
+          mediaType: "video_preview",
+          mediaUrl: "/environments/env_04_drum_courtyard.jpg",
+          notes: "醒狮鼓声与街舞节奏严格对齐 122 BPM。"
+        },
+        stage4_final: {
+          title: "最终生成画面效果图",
+          mediaType: "image",
+          mediaUrl: "/environments/env_04_drum_courtyard.jpg",
+          statusTag: "Keyframe Approved"
+        }
+      },
+      feedbacks: []
+    },
+    {
+      id: "SC-003",
+      number: 3,
+      title: "【Rap 1 团圆欢聚】一桌菜等一年久 · 一家团圆满屋欢笑",
+      timecode: "01:08 - 01:26",
+      startSec: 68,
+      endSec: 86,
+
+      lyricsSnippet: "Coco: '一桌菜等一年久，就盼着这一刻来到' (01:09)\n茵茵: '一家团圆满屋欢笑，迎接新春多热闹' (01:13)\nKitty: '提醒着我们珍惜，把岁月紧紧抓牢' (01:17)\nSam: '眼前每一份爱，都是我们一生的依靠' (01:21)",
+      singerHighlight: "全员 4 人依次接唱 Rap 节奏",
+      suggestedEnvironment: "水墨狂草 · 阳光书斋长案 (化作热气腾腾年夜宴)",
+      environmentId: "env_05",
+      participatingCast: [
+        { name: "全员", role: "围坐丰盛年夜长席，笑逐颜开举杯相庆" }
+      ],
+      wardrobeNote: "全员《金韵华裳》盛典旗袍系列，年味富贵典雅",
+
+      visualRequirements: [
+        "构图与机位：平稳滑轨推镜（Steadicam），顺着长长的大红桌案缓缓扫过冒着热气的年菜与青花瓷盘",
+        "角色表演：家人笑逐颜开相互夹菜举杯，Kitty 颔首微笑，眼神满是对阖家团聚的珍惜与感慨",
+        "光影与特效：暖黄柔和的吊灯烛光，菜肴上方蒸腾出白色的袅袅热气，带出最接地气的烟火气"
+      ],
+
+      generatedOutput: {
+        type: "image",
+        imageUrl: "/environments/env_05_ink_calligraphy.jpg",
+        caption: "AI 最终生成效果图：古风大案上的热气腾腾年夜饭与阖家欢聚",
+        modelEngine: "Midjourney v6.1",
+        aspectRatio: "16:9 4K Cinema"
+      },
+
+      cameraMotion: "Slow warm tracking shot along overflowing family reunion dinner table",
+      lighting: "Amber dining table warmth, soft cinematic retro memories",
+      status: "approved",
+      aspectRatio: "16:9",
+
+      evolution: {
+        stage1_prompt: {
+          title: "Prompt 提示词与指令",
+          model: "Midjourney v6.1",
+          prompt: "Cinematic medium tracking shot, lavish Asian Lunar New Year reunion feast table filled with steaming traditional delicacies, smiling family members around, warm glowing lighting, nostalgic film grain --ar 16:9",
+          notes: "核心情感爆发点：一家团圆满屋欢笑。"
+        },
+        stage2_keyframe: {
+          title: "出镜人物参考表",
+          mediaType: "image",
+          mediaUrl: "/characters/char_02_yinyin.jpg",
+          notes: "茵茵端庄优雅笑容。"
         },
         stage3_motion: {
           title: "动态推演样片",
           mediaType: "video_preview",
           mediaUrl: "/environments/env_05_ink_calligraphy.jpg",
-          notes: "白绢随微风轻摆动态流畅。"
+          notes: "饭菜热气上升流体特效。"
         },
         stage4_final: {
           title: "最终生成画面效果图",
@@ -366,27 +429,27 @@ export const initialProjectData = {
       feedbacks: []
     },
     {
-      id: "SC-003",
-      number: 3,
-      title: "【Rap & Pre-Chorus】月影深闺烛光 · 年夜饭与阿公阿嬷的牵手记忆",
-      timecode: "00:50 - 01:20",
-      startSec: 50,
-      endSec: 80,
+      id: "SC-004",
+      number: 4,
+      title: "【Pre-Chorus 代际破晓】阿公阿嬷牵过的手 · 月影深闺与把黑暗燃烧",
+      timecode: "01:26 - 01:56",
+      startSec: 86,
+      endSec: 116,
 
-      lyricsSnippet: "Coco: '一桌菜等一年久，就盼着这一刻来到'\n茵茵: '一家团圆满屋欢笑，迎接新春多热闹'\nKitty: '提醒着我们珍惜，把岁月紧紧抓牢'\nSam: '眼前每一份爱，都是我们一生的依靠'\n合唱: '阿公阿嬷牵过的手，这份温暖我收好 / 那些接力过的爱，点亮前路的破晓'",
-      singerHighlight: "全员轮唱 ➔ Coco & Sam / 茵茵 & Kitty 和声",
+      lyricsSnippet: "Coco & Sam: '阿公阿嬷牵过的手，这份温暖我收好' (01:27)\n茵茵 & Kitty: '那些接力过的爱，点亮前路的破晓' (01:34)\nCoco & Sam: '曾有盏灯照亮我，穿过狂雨和风暴' (01:41)\n茵茵 & Kitty: 'Now it's my turn, 把黑暗都燃烧' (01:49)\nKitty: '准备好了没？' (01:56)",
+      singerHighlight: "Coco & Sam / 茵茵 & Kitty 轮唱与二重唱",
       suggestedEnvironment: "月影深闺 · 古典中式内阁烛光",
       environmentId: "env_03",
       participatingCast: [
-        { name: "茵茵", role: "温情守望与烛火祈福" },
-        { name: "Coco & Sam", role: "童年阿公阿嬷牵手记忆" }
+        { name: "老阿公阿嬷 (剪影演员)", role: "长满老茧的手温柔握住年轻人的手" },
+        { name: "Kitty", role: "点亮案前第一盏古铜烛台并沉稳发问" }
       ],
-      wardrobeNote: "全员《金韵华裳》旗袍系列 (墨绿帷幔与大红金绣反差)",
+      wardrobeNote: "《金韵华裳》旗袍 (孔雀绿帷幔与月光反差)",
 
       visualRequirements: [
-        "构图与机位：诗意摇镜（Pan），从罗汉床案几上摇曳的烛光，慢慢移焦到镂空花窗外的皓月圆轮",
-        "角色表演：长辈粗糙苍老的手轻轻抚摸年轻人光滑手背的极近景特写，茵茵在一旁温柔浅笑",
-        "光影与特效：室内暖黄色微弱烛光（2200K）与窗外皎洁清冷的冰蓝月光（6500K）冷暖双色交融"
+        "构图与机位：诗意摇镜，由手部特写慢慢移向雕花窗外的一轮皎洁圆月，再切至 Kitty 毅然点亮烛芯的大特写",
+        "角色表演：眼神从含泪感恩逐渐转为无比笃定，最后那句独白‘准备好了没？’气场震慑全场",
+        "光影与特效：清冷月光洒在地面上如同白霜，火柴擦亮瞬间金色火苗升腾，照亮人物坚毅的面庞"
       ],
 
       generatedOutput: {
@@ -399,61 +462,52 @@ export const initialProjectData = {
 
       cameraMotion: "Slow poetic pan across emerald green curtains and candlelit tea tables towards full moon window",
       lighting: "Silvery cool moonbeam contrasting with warm golden candlelight",
-      status: "needs_review",
+      status: "approved",
       aspectRatio: "16:9",
 
       evolution: {
         stage1_prompt: {
           title: "Prompt 提示词与指令",
           model: "Midjourney v6.1",
-          prompt: "Cinematic interior of traditional Chinese ancient bedchamber at midnight, emerald green sheer curtains flowing, full moon shining brightly outside lattice window casting long silvery rays, warm flickering candles, nostalgic feeling --ar 16:9",
+          prompt: "Cinematic interior of traditional Chinese ancient bedchamber at midnight, emerald green sheer curtains flowing, full moon shining brightly outside lattice window, warm flickering candles, emotional nostalgic feeling --ar 16:9",
           notes: "为点燃心灯积蓄深情的情感基调。"
         },
         stage2_keyframe: {
           title: "出镜人物参考表",
           mediaType: "image",
-          mediaUrl: "/characters/char_02_yinyin.jpg",
-          notes: "茵茵旗袍优雅端庄姿态。"
+          mediaUrl: "/characters/char_04_mature_cool.jpg",
+          notes: "Kitty 笃定眼神与立领长裙基准。"
         },
         stage3_motion: {
           title: "动态推演样片",
           mediaType: "video_preview",
           mediaUrl: "/environments/env_03_moonlit_palace.jpg",
-          notes: "移焦与帷幔轻抚动态测试。"
+          notes: "烛光移焦到窗外圆月。"
         },
         stage4_final: {
           title: "最终生成画面效果图",
           mediaType: "image",
           mediaUrl: "/environments/env_03_moonlit_palace.jpg",
-          statusTag: "Under Review"
+          statusTag: "Keyframe Approved"
         }
       },
-      feedbacks: [
-        {
-          id: "fb-402",
-          author: "Kitty (Client)",
-          date: "2026-09-20 22:56",
-          tag: "牵手特写",
-          content: "阿公阿嬷牵手特写要有温度，烛光色温稍微再调暖一点点！",
-          resolved: false
-        }
-      ]
+      feedbacks: []
     },
     {
-      id: "SC-004",
-      number: 4,
-      title: "【Chorus 主副歌】晨曦竹海丁达尔圣光 · 点燃心灯！(Pass It On!)",
-      timecode: "01:20 - 01:50",
-      startSec: 80,
-      endSec: 110,
+      id: "SC-005",
+      number: 5,
+      title: "【Chorus 1 首唱高潮】点燃心灯！(Light It Up! Pass It On!) 善意无限接通",
+      timecode: "01:57 - 02:25",
+      startSec: 116,
+      endSec: 145,
 
-      lyricsSnippet: "茵茵 & Kitty: 'Now it's my turn, 把黑暗都燃烧！准备好了没？点燃心灯！'\nCoco & Sam: '(Light it up!)'\n茵茵 & Kitty: '照亮整个夜空！点燃心灯！'\nCoco & Sam: '(Pass it on!)'\n大合唱: '万千新年灯火连成 千家万户的希望 / 我的光，你的光，这份温暖，世世代代相传！'",
-      singerHighlight: "领唱对答 ➔ 震撼大合唱",
+      lyricsSnippet: "茵茵 & Kitty: '点燃心灯！' Coco & Sam: '(Light it up!)' (01:57)\n茵茵 & Kitty: '照亮整个夜空！' (02:00)\n茵茵 & Kitty: '点燃心灯！' Coco & Sam: '(Pass it on!)' (02:04)\n茵茵 & Kitty: '善意无限接通！' (02:08)\n大合唱: '万千新年灯火连成 千家万户的希望 / 我的光，你的光，这份温暖，世世代代相传！' (02:11-02:25)",
+      singerHighlight: "领唱对答 ➔ 震撼全员大合唱",
       suggestedEnvironment: "竹海晨曦 · 溪涧幽潭丁达尔神光",
       environmentId: "env_02",
       participatingCast: [
-        { name: "茵茵", role: "心灯引路人 (双手捧金光莲花灯)" },
-        { name: "全员", role: "心灯传递接力 (Pass it on 手势)" }
+        { name: "茵茵", role: "双手托起金光心灯优雅旋转" },
+        { name: "全员 5 人", role: "做统一‘托灯 Pass it on’手势接力" }
       ],
       wardrobeNote: "选定《金韵华裳》旗袍 (竹影金绣款与竹林完美共生)",
 
@@ -505,34 +559,164 @@ export const initialProjectData = {
       feedbacks: []
     },
     {
-      id: "SC-005",
-      number: 5,
-      title: "【Rap 2 & Verse 2】金光破晓万水千山 · 跨越南洋深海与做别人的Idol",
-      timecode: "01:50 - 02:20",
-      startSec: 110,
-      endSec: 140,
+      id: "SC-006",
+      number: 6,
+      title: "【Rap 2 大爱心灯】一盏灯火绝对不只照亮一个屋檐 · 化身那道光线",
+      timecode: "02:25 - 02:50",
+      startSec: 145,
+      endSec: 170,
 
-      lyricsSnippet: "茵茵: '一盏灯火，绝对不只照亮一个屋檐'\nCoco: '这份大爱，注定能够走到无限遥远'\nKitty: '一句好话、一次帮助、一个微笑的照面'\nSam: '跨越南洋的深海，一路燃到这舞台'\nCoco: '乘风破浪的先辈，Swag 刻在血脉'\nKitty: '敬上一杯热茶，传承不只是一个 Title'\n茵茵: '化作那一道光芒，做别人生命里的 Idol！'",
-      singerHighlight: "Coco (Swag Rap) · Kitty · 茵茵 · Sam",
-      suggestedEnvironment: "金光破晓 · 漓江山水朝阳旭日",
+      lyricsSnippet: "茵茵: '一盏灯火，绝对不只照亮一个屋檐' (02:25)\nCoco: '这份大爱，注定能够走到无限遥远' (02:30)\nKitty: '一句好话、一次帮助、一个微笑的照面' (02:33)\nSam: '能让寒冷冰封之地，瞬间切换成春天' (02:36)\n茵茵: '原来最珍贵的福气，不是自己多耀眼' (02:40)\nCoco & Sam: '而是别人需要时候，你化身那道光线' (02:44)",
+      singerHighlight: "茵茵 · Coco · Kitty · Sam 轮流特写递进",
+      suggestedEnvironment: "竹林溪涧向阳开阔地 ➔ 暖日破冰",
+      environmentId: "env_02",
+      participatingCast: [
+        { name: "茵茵", role: "眼神充满慈爱大爱，走入阳光下" },
+        { name: "Coco & Sam", role: "自信对视，双手向前递出温暖微光" }
+      ],
+      wardrobeNote: "《金韵华裳》旗袍金光漫射",
+
+      visualRequirements: [
+        "构图与机位：四人快速单人中景特写切换，背景虚化为金色光晕斑点，在'化身那道光线'时合为双人中景",
+        "角色表演：每个人的眼神从内敛微笑到开朗笃定，将大爱慈悲的温度传达给镜头前的观众",
+        "光影与特效：随着'瞬间切换成春天'的唱词，画面色温从偏冷色调瞬间切换为温暖的金色春日阳光"
+      ],
+
+      generatedOutput: {
+        type: "image",
+        imageUrl: "/environments/env_02_bamboo_mist.jpg",
+        caption: "AI 最终生成效果图：丁达尔金光穿透林间，水雾化为温暖春日晨光",
+        modelEngine: "Flux.1 Pro",
+        aspectRatio: "16:9 4K Cinema"
+      },
+
+      cameraMotion: "Quick cinematic character portrait cuts syncing with rapid vocal lines into slow sunburst bloom",
+      lighting: "Dynamic color temperature transition from cool mist to warm 3200K spring sunlight",
+      status: "approved",
+      aspectRatio: "16:9",
+
+      evolution: {
+        stage1_prompt: {
+          title: "Prompt 提示词与指令",
+          model: "Flux.1 Pro",
+          prompt: "Cinematic portrait shots of elegant Asian women walking from shadowed bamboo into bright warm golden sunlight, gentle smiles, lens flare, sun rays, symbolic spiritual transformation --ar 16:9",
+          notes: "突出‘化身那道光线’的利他大爱哲学。"
+        },
+        stage2_keyframe: {
+          title: "出镜人物参考表",
+          mediaType: "image",
+          mediaUrl: "/characters/char_02_yinyin.jpg",
+          notes: "茵茵微表情温暖笃定。"
+        },
+        stage3_motion: {
+          title: "动态推演样片",
+          mediaType: "video_preview",
+          mediaUrl: "/environments/env_02_bamboo_mist.jpg",
+          notes: "光线强弱渐变动画测试。"
+        },
+        stage4_final: {
+          title: "最终生成画面效果图",
+          mediaType: "image",
+          mediaUrl: "/environments/env_02_bamboo_mist.jpg",
+          statusTag: "Keyframe Approved"
+        }
+      },
+      feedbacks: []
+    },
+    {
+      id: "SC-007",
+      number: 7,
+      title: "【Verse 2 南洋深海与热茶】乘风破浪的先辈 · 敬上一杯热茶 · 做别人生命里的 Idol",
+      timecode: "02:50 - 03:33",
+      startSec: 170,
+      endSec: 213,
+
+      lyricsSnippet: "Sam: '跨越南洋的深海，一路燃到这舞台' (03:05)\nCoco: '乘风破浪的先辈，Swag 刻在血脉' (03:12)\nKitty: '敬上一杯热茶，传承不只是一个 Title' (03:19)\n茵茵: '化作那一道光芒，做别人生命里的 Idol' (03:26)",
+      singerHighlight: "Sam (燃舞) · Coco (Swag) · Kitty (茶道) · 茵茵 (Idol 高光)",
+      suggestedEnvironment: "水墨狂草 · 阳光书斋 ➔ 历史航海虚实交融",
+      environmentId: "env_05",
+      participatingCast: [
+        { name: "Sam & Coco", role: "跨越南洋深海的蓬勃动能" },
+        { name: "Kitty", role: "庄重端茶敬茶仪式特写" },
+        { name: "茵茵", role: "做别人生命里的 Idol 圣洁姿态" }
+      ],
+      wardrobeNote: "Kitty《金韵华裳》旗袍 / Coco《红韵》工装碰撞",
+
+      visualRequirements: [
+        "构图与机位：飘逸的书法白绢后方隐现南洋红头船航海的复古历史光影，随即转场至 Kitty 双手平举敬茶的端庄近景",
+        "角色表演：Kitty 眼神恭敬庄严，向先辈与天地敬茶；茵茵在'Idol'高音处微仰起头，金色聚光灯打亮全身",
+        "光影与特效：热茶水汽袅袅升起，在斜射的金色日光中化作璀璨微尘，与黑白水墨大字形成极致审美"
+      ],
+
+      generatedOutput: {
+        type: "image",
+        imageUrl: "/environments/env_05_ink_calligraphy.jpg",
+        caption: "AI 最终生成效果图：阳光书斋飞白狂草长卷与案头敬热茶仪式",
+        modelEngine: "Flux.1 Pro",
+        aspectRatio: "16:9 4K Cinema"
+      },
+
+      cameraMotion: "Sweeping crane move descending from suspended calligraphy scrolls down to macro shot of steaming tea cup",
+      lighting: "Rich amber golden light through paper lattice windows, cinematic tea steam illumination",
+      status: "approved",
+      aspectRatio: "16:9",
+
+      evolution: {
+        stage1_prompt: {
+          title: "Prompt 提示词与指令",
+          model: "Flux.1 Pro",
+          prompt: "Cinematic close-up of mature Asian woman in red gold traditional high collar gown gracefully serving hot steaming tea in ceramic cup with two hands, calligraphy scrolls around, golden dusty sunlight, epic ancestral heritage --ar 16:9",
+          notes: "敬茶仪式升华南洋薪火相传。"
+        },
+        stage2_keyframe: {
+          title: "出镜人物参考表",
+          mediaType: "image",
+          mediaUrl: "/characters/char_04_mature_cool.jpg",
+          notes: "Kitty 敬茶大家风范。"
+        },
+        stage3_motion: {
+          title: "动态推演样片",
+          mediaType: "video_preview",
+          mediaUrl: "/environments/env_05_ink_calligraphy.jpg",
+          notes: "茶水倾注与白绢翻卷动态。"
+        },
+        stage4_final: {
+          title: "最终生成画面效果图",
+          mediaType: "image",
+          mediaUrl: "/environments/env_05_ink_calligraphy.jpg",
+          statusTag: "Keyframe Approved"
+        }
+      },
+      feedbacks: []
+    },
+    {
+      id: "SC-008",
+      number: 8,
+      title: "【Chorus 2 & 3 浩瀚彼岸】点燃心灯！照亮浩瀚彼岸！众生觉心 · 慈爱光 智慧光",
+      timecode: "03:34 - 04:29",
+      startSec: 213,
+      endSec: 269,
+
+      lyricsSnippet: "大合唱: '点燃心灯！(Light it up!) 照亮浩瀚彼岸！' (04:02)\n'点燃心灯！(Pass it on!) 众生觉心点亮！' (04:09)\n'感恩过去修正现在，创造未来的光芒' (04:16)\n'慈爱光，智慧光，清明闪耀，照见生命破晓！' (04:23-04:29)",
+      singerHighlight: "全员大合唱最高音升调爆发",
+      suggestedEnvironment: "金光破晓 · 漓江山水朝阳旭日 (万盏心灯升空)",
       environmentId: "env_01",
       participatingCast: [
-        { name: "Sam & Coco", role: "跨越南洋深海开拓者身姿" },
-        { name: "全员", role: "山水前并肩伫立" }
+        { name: "全员 5 位主角", role: "红金盛典华服，并肩立于浩瀚水岸" }
       ],
-      wardrobeNote: "盛典金红战袍与金色朝霞呼应",
+      wardrobeNote: "全员《金韵华裳》盛典旗袍 (重工真金丝刺绣迎着朝阳金辉)",
 
       visualRequirements: [
         "构图与机位：大广角航拍无人机超大远景，从平静江面如镜的倒影贴水飞掠，再仰冲云霄迎向金色旭日",
-        "角色表演：Sam 与 Coco 在江畔岩滩自信定格，红衣与山水形成鲜明对比，展现下南洋的开拓与自豪",
-        "光影与特效：万丈金霞破云而出，水面铺满粼粼波光的金色碎金，远山呈重峦叠嶂的水墨青黛色"
+        "角色表演：5 位女性在江畔岩滩自信定格，红衣与山水形成鲜明对比，双手放飞无数盏金色莲花心灯",
+        "光影与特效：万丈金霞破云而出，数千盏心灯漂浮升向晨曦，水面金色漫反射，群山如青黛水墨画卷"
       ],
 
       generatedOutput: {
         type: "image",
         imageUrl: "/environments/env_01_dawn_river.jpg",
-        caption: "AI 最终生成效果图：旭日初升金霞漫天，漓江群峰如黛",
-        modelEngine: "Flux.1 Pro",
+        caption: "AI 最终生成效果图：旭日初升金霞漫天，数千盏心灯冉冉升入浩瀚彼岸",
+        modelEngine: "Flux.1 Pro / Multi-LoRA Composite",
         aspectRatio: "16:9 4K Cinema"
       },
 
@@ -545,20 +729,20 @@ export const initialProjectData = {
         stage1_prompt: {
           title: "Prompt 提示词与指令",
           model: "Flux.1 Pro",
-          prompt: "Cinematic majestic wide shot, golden sunrise breaking through radiant clouds over vast karst mountain river landscape, warm shimmering golden light reflecting on calm river, mist weaving between peaks --ar 16:9",
-          notes: "寄托南洋华人筚路蓝缕、破晓初升的壮阔心境。"
+          prompt: "Cinematic majestic wide shot, golden sunrise breaking through radiant clouds over vast karst mountain river landscape, thousands of glowing lotus heart lanterns floating into sky, five Asian women in red gold regal dresses on shore, epic spiritual masterpiece --ar 16:9",
+          notes: "全曲最震撼灵魂的画面，点亮浩瀚彼岸与众生觉心。"
         },
         stage2_keyframe: {
           title: "出镜人物参考表",
           mediaType: "image",
-          mediaUrl: "/characters/char_05_sam.jpg",
-          notes: "Sam 矫健舞姿与阳光剪影。"
+          mediaUrl: "/characters/char_02_yinyin.jpg",
+          notes: "茵茵与全员庄严神圣姿态。"
         },
         stage3_motion: {
           title: "动态推演样片",
           mediaType: "video_preview",
           mediaUrl: "/environments/env_01_dawn_river.jpg",
-          notes: "江面贴水飞掠飞云动态。"
+          notes: "千盏心灯升空与江水微澜动态。"
         },
         stage4_final: {
           title: "最终生成画面效果图",
@@ -570,21 +754,21 @@ export const initialProjectData = {
       feedbacks: []
     },
     {
-      id: "SC-006",
-      number: 6,
-      title: "【Outro 终章燃爆】뛰어! (Jump!) 龙鼓狂欢与万盏心灯破晓盛典",
-      timecode: "02:20 - 02:45",
-      startSec: 140,
-      endSec: 165,
+      id: "SC-009",
+      number: 9,
+      title: "【Outro 终章燃爆】뛰어! (Jump!) 薪火相传 · 灯火全开 · 龙鼓狂欢定格",
+      timecode: "04:30 - 04:49",
+      startSec: 269,
+      endSec: 289,
 
-      lyricsSnippet: "全员呼喊: '뛰어! (Jump!)'\nSam & Coco: 'Hey! 薪火相传，Let's go!'\n茵茵 & Kitty: 'Jump! 灯火全开，Make it glow!'\n全员大合唱: '一盏传一盏，一颗心暖一颗心！뛰어! (Jump!)'",
-      singerHighlight: "全员 5 位主角齐聚大跳跃",
-      suggestedEnvironment: "双场景交汇：龙鼓大院水台舞台 + 金光破晓山水天际",
+      lyricsSnippet: "全员呼喊: '뛰어! (Jump!)' (04:30)\nSam & Coco: 'Hey! 薪火相传，Let's go!' (04:31)\n茵茵 & Kitty: 'Jump! 灯火全开，Make it glow!' (04:34)\n大合唱: '一盏传一盏，一颗心暖一颗心！' (04:37)\n全员终极大喊: '뛰어! (Jump!)' (04:40-04:49)",
+      singerHighlight: "全员 5 人同步滞空起跳狂欢",
+      suggestedEnvironment: "龙鼓大院水浸红绸主舞台 (金色彩带炮齐发)",
       environmentId: "env_04",
       participatingCast: [
-        { name: "Alicia · Coco · Kitty · 茵茵 · Sam", role: "全员 5 人同步纵身跃起滞空" }
+        { name: "Alicia · Coco · Kitty · 茵茵 · Sam", role: "5 人在舞台同时起跳，慢动作滞空 1.5 秒" }
       ],
-      wardrobeNote: "全员换装《红韵》国潮工装 (抽绳大口袋在空中飞扬)",
+      wardrobeNote: "全员《红韵》国潮嘻哈工装 (抽绳大口袋在空中飞扬)",
 
       visualRequirements: [
         "构图与机位：正面中景高速摄影机（120fps 慢动作升格），抓取 5 人在龙鼓大院水面同时起跳的瞬间",
@@ -594,8 +778,8 @@ export const initialProjectData = {
 
       generatedOutput: {
         type: "image",
-        imageUrl: "/environments/env_01_dawn_river.jpg",
-        caption: "AI 最终生成效果图：破晓金光下万千心灯与礼花漫天",
+        imageUrl: "/environments/env_04_drum_courtyard.jpg",
+        caption: "AI 最终生成效果图：龙鼓大院全员 120fps 慢动作跳跃滞空与漫天金色彩带",
         modelEngine: "Flux.1 Pro / Multi-LoRA Composite",
         aspectRatio: "16:9 4K Cinema"
       },
@@ -627,7 +811,7 @@ export const initialProjectData = {
         stage4_final: {
           title: "最终生成画面效果图",
           mediaType: "image",
-          mediaUrl: "/environments/env_01_dawn_river.jpg",
+          mediaUrl: "/environments/env_04_drum_courtyard.jpg",
           statusTag: "Grand Finale Mastered"
         }
       },

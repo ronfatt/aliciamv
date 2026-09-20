@@ -12,7 +12,7 @@ export default function AudioPlayer({
   const audioRef = useRef(null);
   const fileInputRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [duration, setDuration] = useState(105); // 默认时长
+  const [duration, setDuration] = useState(289); // 默认 4分49秒 官方音频
   const [volume, setVolume] = useState(0.85);
   const [isMuted, setIsMuted] = useState(false);
   const [customAudioUrl, setCustomAudioUrl] = useState(null);
@@ -36,7 +36,7 @@ export default function AudioPlayer({
   // 监听时长加载
   const handleLoadedMetadata = () => {
     if (audioRef.current) {
-      setDuration(audioRef.current.duration || 105);
+      setDuration(audioRef.current.duration || 289);
     }
   };
 
