@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
-import { Compass, Sparkles, Eye, X, Sun, Moon, Flame, Wind, Film, ChevronRight } from 'lucide-react';
+import { Compass, Sparkles, Eye, X, Sun, Moon, Flame, Wind, Film, ChevronRight, Layers, Camera } from 'lucide-react';
 
 export default function EnvironmentGallery({ environments }) {
   const [selectedEnv, setSelectedEnv] = useState(null);
+  const [activeShotUrl, setActiveShotUrl] = useState(null);
 
   if (!environments || environments.length === 0) return null;
+
+  const handleOpenModal = (env) => {
+    setSelectedEnv(env);
+    setActiveShotUrl(env.image);
+  };
 
   return (
     <section className="bg-zinc-950/70 border border-zinc-800/80 rounded-2xl p-4 sm:p-5 backdrop-blur-sm">
@@ -17,22 +23,22 @@ export default function EnvironmentGallery({ environments }) {
             <h3 className="text-sm font-bold text-white flex items-center gap-2">
               MV 核心视觉场景概念库 (Cinematic Concept Environments)
               <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                5大主场已锁定
+                4大国风奇幻核心场景已锁定
               </span>
             </h3>
             <p className="text-[11px] text-zinc-400">
-              龙鼓大院 · 水墨画堂 · 月影深闺 · 晨光竹海 · 金光破晓江天（点击查看光影与机位调度）
+              奇幻山水 · 山水石宫 · 玉色宫阙 · 桃花园（点击卡片查看多视角全景分镜机位与光影调度）
             </p>
           </div>
         </div>
       </div>
 
-      {/* 5 组场景卡片网格 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+      {/* 4 组场景卡片网格 */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {environments.map((env, idx) => (
           <div
             key={env.id}
-            onClick={() => setSelectedEnv(env)}
+            onClick={() => handleOpenModal(env)}
             className="group relative bg-zinc-900/80 hover:bg-zinc-900 border border-zinc-800/80 hover:border-amber-500/50 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-500/10 flex flex-col"
           >
             {/* 场景封面图 */}
@@ -51,13 +57,17 @@ export default function EnvironmentGallery({ environments }) {
                 </h4>
               </div>
 
+              {/* 多视角机位数量标识 */}
+              {env.shots && env.shots.length > 0 && (
+                <div className="absolute top-2 right-2 bg-black/80 backdrop-blur-md px-2 py-0.5 rounded-md text-[10px] font-mono text-amber-300 border border-amber-500/30 flex items-center gap-1 shadow-sm">
+                  <Camera className="w-3 h-3 text-amber-400" />
+                  <span>{env.shots.length} 组机位</span>
+                </div>
+              )}
+
               {/* 推荐服装标识 */}
               <div className="absolute top-2 left-2 bg-black/75 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-medium text-zinc-200 border border-white/10">
                 {env.recommendedWardrobe}
-              </div>
-
-              <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-black/70 backdrop-blur-md p-1.5 rounded-lg text-white">
-                <Eye className="w-3.5 h-3.5 text-amber-300" />
               </div>
             </div>
 
@@ -67,11 +77,11 @@ export default function EnvironmentGallery({ environments }) {
                 {env.description}
               </p>
               <div className="pt-2 border-t border-zinc-800/60 flex items-center justify-between text-[10px] text-zinc-500">
-                <span className="text-amber-400 font-mono">
+                <span className="text-amber-400 font-mono line-clamp-1">
                   {env.lyricsMapping}
                 </span>
-                <span className="group-hover:text-zinc-300 transition-colors flex items-center">
-                  详情 <ChevronRight className="w-3 h-3 ml-0.5" />
+                <span className="group-hover:text-zinc-300 transition-colors flex items-center shrink-0 ml-1">
+                  查看全景 <ChevronRight className="w-3 h-3 ml-0.5" />
                 </span>
               </div>
             </div>
@@ -79,7 +89,7 @@ export default function EnvironmentGallery({ environments }) {
         ))}
       </div>
 
-      {/* 放大查看全景概念图模态框 */}
+      {/* 放大查看全景概念图与多机位模态框 */}
       {selectedEnv && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md animate-fadeIn">
           <div className="fixed inset-0" onClick={() => setSelectedEnv(null)} />
@@ -104,15 +114,55 @@ export default function EnvironmentGallery({ environments }) {
               </button>
             </div>
 
-            {/* 大图展示 */}
+            {/* 主画廊展示区 */}
             <div className="flex-1 overflow-y-auto p-4 sm:p-6 bg-[#090a0f] space-y-4">
-              <div className="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 flex items-center justify-center shadow-2xl">
+              
+              {/* 大图展示 */}
+              <div className="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-950 flex items-center justify-center shadow-2xl aspect-[16/9] max-h-[58vh]">
                 <img
-                  src={selectedEnv.image}
+                  src={activeShotUrl || selectedEnv.image}
                   alt={selectedEnv.name}
-                  className="w-full h-auto max-h-[65vh] object-contain"
+                  className="w-full h-full object-contain"
                 />
               </div>
+
+              {/* 多视角机位快速切换栏 */}
+              {selectedEnv.shots && selectedEnv.shots.length > 0 && (
+                <div className="space-y-2 p-3 rounded-xl bg-zinc-900/60 border border-zinc-800">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-zinc-300 font-semibold flex items-center gap-1.5">
+                      <Camera className="w-3.5 h-3.5 text-amber-400" />
+                      官方多视角镜头库 (点击切换大图预览):
+                    </span>
+                    <span className="text-zinc-500 font-mono text-[11px]">
+                      共 {selectedEnv.shots.length} 组高清分镜机位
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-2 pt-1">
+                    {selectedEnv.shots.map((shot, sIdx) => {
+                      const isSelected = (activeShotUrl || selectedEnv.image) === shot.url;
+                      return (
+                        <button
+                          key={sIdx}
+                          onClick={() => setActiveShotUrl(shot.url)}
+                          className={`relative rounded-lg overflow-hidden border text-left transition-all ${
+                            isSelected
+                              ? 'border-amber-400 ring-2 ring-amber-400/40 shadow-lg scale-[1.02]'
+                              : 'border-zinc-800 hover:border-zinc-600 opacity-70 hover:opacity-100'
+                          }`}
+                        >
+                          <div className="aspect-[16/9] bg-black">
+                            <img src={shot.url} alt={shot.title} className="w-full h-full object-cover" />
+                          </div>
+                          <div className="p-1 bg-zinc-950/90 text-[10px] text-zinc-300 line-clamp-1">
+                            {shot.title}
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
 
               {/* 场景调度指南 */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 text-xs">

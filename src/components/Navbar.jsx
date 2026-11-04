@@ -57,9 +57,9 @@ export default function Navbar({
     { 
       id: 'environments', 
       label: '概念场景画廊', 
-      sub: '5大影视核心场景', 
+      sub: '4大国风奇幻核心场景', 
       icon: Compass, 
-      badge: '5 大场景' 
+      badge: '4 大场景' 
     },
     { 
       id: 'lyrics', 

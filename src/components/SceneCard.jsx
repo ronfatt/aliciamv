@@ -18,7 +18,7 @@ export default function SceneCard({
     scene.generatedOutput?.imageUrl || 
     scene.evolution.stage4_final?.mediaUrl || 
     scene.evolution.stage3_motion?.mediaUrl ||
-    "/environments/env_04_drum_courtyard.jpg";
+    "/environments/qihuan_shanshui/晨光中的湖畔古亭-1.png";
 
   const pendingFeedbacks = scene.feedbacks?.filter(f => !f.resolved)?.length || 0;
 
