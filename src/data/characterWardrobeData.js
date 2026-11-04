@@ -56,77 +56,19 @@ export const characterWardrobeData = {
     }
   ],
 
-  // 6 位主角在不同服装套系下的独立视觉数据 (5位主唱 + 1位Intro特邀主角)
+  // 6 位主角在不同服装套系下的独立视觉数据 (5位主唱 + 1位特邀京腔领唱)
   characters: [
     {
-      id: "char_moon",
-      name: "Moon (Intro 特邀领唱)",
-      role: "唯美引子 · 优雅之声 · 蓝调启航",
-      tagline: "点燃第一盏灯火，引万千繁星共鸣",
-      originalCasting: {
-        title: "原始定妆：皇家钴蓝风琴褶礼服",
-        vibe: "优雅之声 · 飘带领结 · 钻石耳坠 · 纯净深情",
-        image: "/characters/char_06_moon_hd.jpg"
-      },
-      wardrobeLooks: {
-        set1_streetwear: {
-          option_a: {
-            title: "国潮丝绒立领祥云战袍 x 潮酷红工装",
-            costumeDesc: "经典正红立领短外套，金丝云纹盘扣，高腰宽松束脚工装裤配黑色马丁靴，保留标志性波浪卷发与钻石耳坠，以从容高贵的声乐姿态领航全片。",
-            detailTitle: "云纹金绣与手工盘扣",
-            detailDesc: "胸前金丝云纹浮雕刺绣与高定盘结扣头，利落帅气。",
-            image: "/wardrobe_crops/set1_moon.jpg",
-            detailImage: "/wardrobe_crops/set1_moon_detail.jpg",
-            highlightPills: ["丝绒正红", "云纹金绣", "钻石耳饰", "Intro 领航"],
-            loraPrompt: "Moon, elegant Asian female singer, wavy dark brown hair, red Chinese contemporary streetwear jacket, gold cloud embroidery, diamond drop earrings, red cargo dance pants, concert stage lighting --ar 3:4"
-          },
-          option_b: {
-            title: "黑红撞色提花立领战袍 (Red Dynasty)",
-            costumeDesc: "暗红提花绸缎拼接黑色反折袖口，胸口黑金双色盘扣，展现出如同电影大片般的深邃开场气场。",
-            detailTitle: "云纹提花与手工黑盘扣",
-            detailDesc: "丝绸微光提花面料，立领黑边轮廓，利落且具有东方威严。",
-            image: "/wardrobe_crops/set1_moon.jpg",
-            detailImage: "/wardrobe_crops/set1_moon_detail.jpg",
-            highlightPills: ["暗纹提花", "黑金盘扣", "电影气场", "Intro 大引子"],
-            loraPrompt: "Moon, elegant Asian female singer, wavy hair, dark red jacquard frog button jacket, black cuffs, red cargo dance pants, dramatic rim lighting --ar 3:4"
-          }
-        },
-        set2_qipao: {
-          option_a: {
-            title: "四季繁花织锦旗袍 x 手捧心灯 (Scarlet Harmony)",
-            costumeDesc: "古典立领斜襟旗袍，素雅金色梅花与金菊刺绣，手捧发光暖黄心灯，将Intro引唱的温婉与春节大爱完美融为一体。",
-            detailTitle: "金梅斜襟与温润心灯",
-            detailDesc: "精致珠扣与胸前金线枝蔓，心灯透出的光芒柔和照亮脸庞。",
-            image: "/wardrobe_crops/set2_moon.jpg",
-            detailImage: "/wardrobe_crops/set2_moon_detail.jpg",
-            highlightPills: ["金梅刺绣", "暖光心灯", "珠玉斜襟", "新春祥和"],
-            loraPrompt: "Moon, elegant Asian woman with wavy dark hair and diamond earrings, red silk qipao, gold floral embroidery, holding glowing heart lantern, warm golden bokeh --ar 3:4"
-          },
-          option_b: {
-            title: "凤舞九天重工金绣真丝旗袍 (Red & Gold)",
-            costumeDesc: "全红真丝缎面旗袍，胸口金凤展翅腾飞刺绣，下摆金牡丹层叠绽放，手捧心灯，点燃全片第一盏大爱之光。",
-            detailTitle: "金凤腾飞重工盘金绣",
-            detailDesc: "金线立体打籽绣金凤，凤尾蔓延至侧边开衩，珠光璀璨。",
-            image: "/wardrobe_crops/set2_moon.jpg",
-            detailImage: "/wardrobe_crops/set2_moon_detail.jpg",
-            highlightPills: ["凤舞九天", "重工盘金", "大女主气场", "第一盏心灯"],
-            loraPrompt: "Moon, elegant Asian woman with wavy dark hair and diamond earrings, royal red Chinese qipao cheongsam with gold phoenix and floral embroidery, holding glowing heart paper lantern --ar 3:4"
-          }
-        }
-      }
-    },
-    {
       id: "char_alicia",
-      name: "Alicia (京腔领唱)",
-      role: "京腔国粹 · 归家导航",
+      name: "Alicia (特邀领唱)",
+      role: "特邀领唱 · 京腔国粹 · 归家导航",
       tagline: "红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！",
       originalCasting: {
         title: "原始定妆：知性都市西装",
-        vibe: "灰色西装 · 复古红框眼镜 · 现代打工人意象",
+        vibe: "灰色西装 · 复古红框眼镜 · 现代知性融合国风红灯笼",
         image: "/characters/char_01_office.jpg"
       },
       wardrobeLooks: {
-        // 第一套工装（统一舞台战袍设定）
         set1_streetwear: {
           option_a: {
             title: "国潮云纹立领战袍 x 潮酷工装裤",
@@ -135,7 +77,7 @@ export const characterWardrobeData = {
             detailDesc: "胸前四道手工编织金色盘扣，双肩与下摆重工金绣云纹。",
             image: "/wardrobe_crops/set1_alicia.jpg",
             detailImage: "/wardrobe_crops/set1_alicia_detail.jpg",
-            highlightPills: ["金丝云纹", "中式盘扣", "束脚工装裤", "舞台光效"],
+            highlightPills: ["特邀领唱", "金丝云纹", "中式盘扣", "戏曲跨界"],
             loraPrompt: "Alicia, young Asian singer, short blunt bangs, round glasses, red Chinese contemporary streetwear jacket, gold cloud embroidery, frog buttons, red cargo dance pants, combat boots, dynamic stage lighting --ar 3:4"
           },
           option_b: {
@@ -149,7 +91,6 @@ export const characterWardrobeData = {
             loraPrompt: "Alicia, young Asian female lead singer, glasses, blunt bangs, dark red jacquard frog button jacket, black cuffs, red cargo dance pants, dramatic rim lighting --ar 3:4"
           }
         },
-        // 第二套旗袍
         set2_qipao: {
           option_a: {
             title: "四季繁花织锦旗袍 x 手捧心灯 (Scarlet Harmony)",
@@ -175,9 +116,66 @@ export const characterWardrobeData = {
       }
     },
     {
+      id: "char_moon",
+      name: "Moon",
+      role: "主唱 · Intro 启航 · 唯美蓝调之声",
+      tagline: "点燃第一盏灯火，引万千繁星共鸣",
+      originalCasting: {
+        title: "原始定妆：皇家钴蓝风琴褶礼服",
+        vibe: "优雅主唱 · 飘带领结 · 钻石耳坠 · 纯净深情",
+        image: "/characters/char_06_moon_hd.jpg"
+      },
+      wardrobeLooks: {
+        set1_streetwear: {
+          option_a: {
+            title: "国潮丝绒立领祥云战袍 x 潮酷红工装",
+            costumeDesc: "经典正红立领短外套，金丝云纹盘扣，高腰宽松束脚工装裤配黑色马丁靴，保留标志性波浪卷发与钻石耳坠，以从容高贵的声乐姿态领航全片。",
+            detailTitle: "云纹金绣与手工盘扣",
+            detailDesc: "胸前金丝云纹浮雕刺绣与高定盘结扣头，利落帅气。",
+            image: "/wardrobe_crops/set1_moon.jpg",
+            detailImage: "/wardrobe_crops/set1_moon_detail.jpg",
+            highlightPills: ["主唱", "丝绒正红", "云纹金绣", "钻石耳饰"],
+            loraPrompt: "Moon, elegant Asian female singer, wavy dark brown hair, red Chinese contemporary streetwear jacket, gold cloud embroidery, diamond drop earrings, red cargo dance pants, concert stage lighting --ar 3:4"
+          },
+          option_b: {
+            title: "黑红撞色提花立领战袍 (Red Dynasty)",
+            costumeDesc: "暗红提花绸缎拼接黑色反折袖口，胸口黑金双色盘扣，展现出如同电影大片般的深邃开场气场。",
+            detailTitle: "云纹提花与手工黑盘扣",
+            detailDesc: "丝绸微光提花面料，立领黑边轮廓，利落且具有东方威严。",
+            image: "/wardrobe_crops/set1_moon.jpg",
+            detailImage: "/wardrobe_crops/set1_moon_detail.jpg",
+            highlightPills: ["主唱", "暗纹提花", "黑金盘扣", "电影气场"],
+            loraPrompt: "Moon, elegant Asian female singer, wavy hair, dark red jacquard frog button jacket, black cuffs, red cargo dance pants, dramatic rim lighting --ar 3:4"
+          }
+        },
+        set2_qipao: {
+          option_a: {
+            title: "四季繁花织锦旗袍 x 手捧心灯 (Scarlet Harmony)",
+            costumeDesc: "古典立领斜襟旗袍，素雅金色梅花与金菊刺绣，手捧发光暖黄心灯，将主唱的温婉与春节大爱完美融为一体。",
+            detailTitle: "金梅斜襟与温润心灯",
+            detailDesc: "精致珠扣与胸前金线枝蔓，心灯透出的光芒柔和照亮脸庞。",
+            image: "/wardrobe_crops/set2_moon.jpg",
+            detailImage: "/wardrobe_crops/set2_moon_detail.jpg",
+            highlightPills: ["主唱", "金梅刺绣", "暖光心灯", "珠玉斜襟"],
+            loraPrompt: "Moon, elegant Asian woman with wavy dark hair and diamond earrings, red silk qipao, gold floral embroidery, holding glowing heart lantern, warm golden bokeh --ar 3:4"
+          },
+          option_b: {
+            title: "凤舞九天重工金绣真丝旗袍 (Red & Gold)",
+            costumeDesc: "全红真丝缎面旗袍，胸口金凤展翅腾飞刺绣，下摆金牡丹层叠绽放，手捧心灯，点燃全片第一盏大爱之光。",
+            detailTitle: "金凤腾飞重工盘金绣",
+            detailDesc: "金线立体打籽绣金凤，凤尾蔓延至侧边开衩，珠光璀璨。",
+            image: "/wardrobe_crops/set2_moon.jpg",
+            detailImage: "/wardrobe_crops/set2_moon_detail.jpg",
+            highlightPills: ["主唱", "凤舞九天", "重工盘金", "第一盏心灯"],
+            loraPrompt: "Moon, elegant Asian woman with wavy dark hair and diamond earrings, royal red Chinese qipao cheongsam with gold phoenix and floral embroidery, holding glowing heart paper lantern --ar 3:4"
+          }
+        }
+      }
+    },
+    {
       id: "char_coco",
       name: "Coco",
-      role: "街舞活力 · 嘻哈 Rap · Swag 担当",
+      role: "主唱 · 街舞活力 · 嘻哈 Rap · Swag 担当",
       tagline: "舞狮鼓声传千里，We never lay low / 乘风破浪的先辈，Swag 刻在血脉",
       originalCasting: {
         title: "原始定妆：街头 Oversized 酷黑潮服",
@@ -234,7 +232,7 @@ export const characterWardrobeData = {
     {
       id: "char_kitty",
       name: "Kitty",
-      role: "根脉深植 · 敬茶奉献 · 成熟大爱",
+      role: "主唱 · 根脉深植 · 敬茶奉献 · 成熟大爱",
       tagline: "外面的风浪再大，根脉依然在心底绕 / 敬上一杯热茶，传承不只是一个 Title",
       originalCasting: {
         title: "原始定妆：干练盘发无袖立领衬衫",
@@ -289,66 +287,9 @@ export const characterWardrobeData = {
       }
     },
     {
-      id: "char_sam",
-      name: "Sam",
-      role: "现代舞动 · 南洋深海 · 青春燃力",
-      tagline: "穿破天空的鞭炮，那是世代的记号 / 跨越南洋的深海，一路燃到这舞台",
-      originalCasting: {
-        title: "原始定妆：简约黑T牛仔修身舞服",
-        vibe: "挑染公主半编发 · 圆环耳饰 · 现代舞爆发力",
-        image: "/characters/char_05_sam_hd.jpg"
-      },
-      wardrobeLooks: {
-        set1_streetwear: {
-          option_a: {
-            title: "中式回纹绣花露脐运动卫衣 (Lattice Embroidery Crop Top)",
-            costumeDesc: "短款露脐运动卫衣，胸口立体红色中国结回字纹绣，拉链半高领，双袖白道运动饰边，尽显现代舞者的紧实腹肌与跃动感。",
-            detailTitle: "03 LATTICE EMBROIDERY DETAIL 中式回纹绣花",
-            detailDesc: "高密度红色回字结绣 + 银色半开拉链 + 白条纹运动袖",
-            image: "/wardrobe_crops/set1_a_sam.jpg",
-            detailImage: "/wardrobe_crops/set1_a_sam_detail.jpg",
-            highlightPills: ["露脐卫衣", "中国结回纹", "白边运动袖", "爆发力舞者"],
-            loraPrompt: "Sam, athletic Asian female dancer, blonde highlighted half-up hair, cropped red sports zip pullover with Chinese knot embroidery, red baggy track pants --ar 3:4"
-          },
-          option_b: {
-            title: "中式古币铜牌腰链工装 (Waist Construction Chain)",
-            costumeDesc: "立领短上衣露出一截纤细腰线，腰袢悬挂青铜古钱币多层金属链，伴随舞步摇曳碰撞，野性又时尚。",
-            detailTitle: "03 WAIST CONSTRUCTION 腰部设计",
-            detailDesc: "仿古铜币悬垂腰链 + 高腰双带裤襻",
-            image: "/wardrobe_crops/set1_b_sam.jpg",
-            detailImage: "/wardrobe_crops/set1_b_sam_detail.jpg",
-            highlightPills: ["古币腰链", "铜牌挂饰", "金属碰撞", "跨洋青春"],
-            loraPrompt: "Sam, crop red mandarin collar top, vintage coin chain belt around waist, red wide-leg street dance pants with jacquard side stripes --ar 3:4"
-          }
-        },
-        set2_qipao: {
-          option_a: {
-            title: "腊梅绣与灯笼收口长袖 (Plum Blossom & Sleeve Detail)",
-            costumeDesc: "一枝傲雪金腊梅自侧腰盘旋而下，复古灯笼收口长袖在现代舞旋转舒展时形成波浪形褶皱，美不胜收。",
-            detailTitle: "03 PLUM BLOSSOM EMBROIDERY & SLEEVE DETAIL",
-            detailDesc: "梅花绣与灯笼袖细节，金梅枝干灵动攀附",
-            image: "/wardrobe_crops/set2_a_sam.jpg",
-            detailImage: "/wardrobe_crops/set2_a_sam_detail.jpg",
-            highlightPills: ["金梅绽放", "灯笼收口袖", "旋转飘拂", "舞动诗意"],
-            loraPrompt: "Sam, graceful dancer, lantern puff sleeve red qipao, golden blooming plum blossom branch embroidered sweeping across skirt --ar 3:4"
-          },
-          option_b: {
-            title: "幽香兰花金绣与立体褶皱 (Orchid Embroidery & Draping)",
-            costumeDesc: "胸腰处大师级斜向立体密褶，像琴弦般收紧腰身，兰花金丝刺绣顺着褶裥蔓延，充满雕塑般的身体线条感。",
-            detailTitle: "03 ORCHID EMBROIDERY & DRAPING DETAIL",
-            detailDesc: "兰花金绣与褶裥细节，斜向放射状手工密褶",
-            image: "/wardrobe_crops/set2_b_sam.jpg",
-            detailImage: "/wardrobe_crops/set2_b_sam_detail.jpg",
-            highlightPills: ["立体斜褶", "幽谷金兰", "雕塑线条", "高定剪裁"],
-            loraPrompt: "Sam, red couture qipao gown with sculptural diagonal pleated draping across waist, elegant gold orchid embroidery --ar 3:4"
-          }
-        }
-      }
-    },
-    {
       id: "char_yinyin",
       name: "茵茵 (YIN YIN)",
-      role: "优雅旋转 · 慈爱温润 · 生命 Idol",
+      role: "主唱 · 优雅旋转 · 慈爱温润 · 生命 Idol",
       tagline: "原来最珍贵的福气，不是自己多耀眼，而是别人需要时候，你化身那道光线",
       originalCasting: {
         title: "原始定妆：白色短西装黑长裙芭蕾定妆",
@@ -364,7 +305,7 @@ export const characterWardrobeData = {
             detailDesc: "黑底红回纹连帽斜襟织带包边 + 哑光质感纽扣",
             image: "/wardrobe_crops/set1_a_yinyin.jpg",
             detailImage: "/wardrobe_crops/set1_a_yinyin_detail.jpg",
-            highlightPills: ["连帽斜襟", "几何织带", "甜辣舞台", "偶像气场"],
+            highlightPills: ["主唱", "连帽斜襟", "几何织带", "甜辣舞台", "偶像气场"],
             loraPrompt: "Yin Yin, pretty Asian dancer with highlighted hair, cropped hooded red jacket with geometric border tape, red cargo pants --ar 3:4"
           },
           option_b: {
@@ -374,7 +315,7 @@ export const characterWardrobeData = {
             detailDesc: "侧边黑色立体贴袋 + 金色隐约盘龙暗绣",
             image: "/wardrobe_crops/set1_b_yinyin.jpg",
             detailImage: "/wardrobe_crops/set1_b_yinyin_detail.jpg",
-            highlightPills: ["立体贴袋", "盘龙暗绣", "黑红拼接", "动静相宜"],
+            highlightPills: ["主唱", "立体贴袋", "盘龙暗绣", "黑红拼接", "动静相宜"],
             loraPrompt: "Yin Yin, stylish red bolero jacket with frog fasteners, cargo pocket trousers with black side accent stripe --ar 3:4"
           }
         },
@@ -386,7 +327,7 @@ export const characterWardrobeData = {
             detailDesc: "银杏绣与斜襟细节，扇形金叶层叠辉映",
             image: "/wardrobe_crops/set2_a_yinyin.jpg",
             detailImage: "/wardrobe_crops/set2_a_yinyin_detail.jpg",
-            highlightPills: ["银杏金叶", "双层重叠", "生命之光", "温婉慈爱"],
+            highlightPills: ["主唱", "银杏金叶", "双层重叠", "生命之光", "温婉慈爱"],
             loraPrompt: "Yin Yin, radiant smiling dancer, red evening qipao with golden ginkgo leaves floating embroidery, double-layer skirt slit --ar 3:4"
           },
           option_b: {
@@ -396,8 +337,65 @@ export const characterWardrobeData = {
             detailDesc: "风羽金绣与领口细节，珍珠金珠交织盘扣",
             image: "/wardrobe_crops/set2_b_yinyin.jpg",
             detailImage: "/wardrobe_crops/set2_b_yinyin_detail.jpg",
-            highlightPills: ["凤羽九天", "珍珠盘扣", "鱼尾长裙", "生命 Idol"],
+            highlightPills: ["主唱", "凤羽九天", "珍珠盘扣", "鱼尾长裙", "生命 Idol"],
             loraPrompt: "Yin Yin, high-fashion red qipao, resplendent gold phoenix plumage embroidery flowing from shoulder down to mermaid hemline, pearl frog clasp --ar 3:4"
+          }
+        }
+      }
+    },
+    {
+      id: "char_sam",
+      name: "Sam",
+      role: "主唱 · 现代舞动 · 南洋深海 · 青春燃力",
+      tagline: "穿破天空的鞭炮，那是世代的记号 / 跨越南洋的深海，一路燃到这舞台",
+      originalCasting: {
+        title: "原始定妆：简约黑T牛仔修身舞服",
+        vibe: "挑染公主半编发 · 圆环耳饰 · 现代舞爆发力",
+        image: "/characters/char_05_sam_hd.jpg"
+      },
+      wardrobeLooks: {
+        set1_streetwear: {
+          option_a: {
+            title: "中式回纹绣花露脐运动卫衣 (Lattice Embroidery Crop Top)",
+            costumeDesc: "短款露脐运动卫衣，胸口立体红色中国结回字纹绣，拉链半高领，双袖白道运动饰边，尽显现代舞者的紧实腹肌与跃动感。",
+            detailTitle: "03 LATTICE EMBROIDERY DETAIL 中式回纹绣花",
+            detailDesc: "高密度红色回字结绣 + 银色半开拉链 + 白条纹运动袖",
+            image: "/wardrobe_crops/set1_a_sam.jpg",
+            detailImage: "/wardrobe_crops/set1_a_sam_detail.jpg",
+            highlightPills: ["主唱", "露脐卫衣", "中国结回纹", "白边运动袖", "爆发力舞者"],
+            loraPrompt: "Sam, athletic Asian female dancer, blonde highlighted half-up hair, cropped red sports zip pullover with Chinese knot embroidery, red baggy track pants --ar 3:4"
+          },
+          option_b: {
+            title: "中式古币铜牌腰链工装 (Waist Construction Chain)",
+            costumeDesc: "立领短上衣露出一截纤细腰线，腰袢悬挂青铜古钱币多层金属链，伴随舞步摇曳碰撞，野性又时尚。",
+            detailTitle: "03 WAIST CONSTRUCTION 腰部设计",
+            detailDesc: "仿古铜币悬垂腰链 + 高腰双带裤襻",
+            image: "/wardrobe_crops/set1_b_sam.jpg",
+            detailImage: "/wardrobe_crops/set1_b_sam_detail.jpg",
+            highlightPills: ["主唱", "古币腰链", "铜牌挂饰", "金属碰撞", "跨洋青春"],
+            loraPrompt: "Sam, crop red mandarin collar top, vintage coin chain belt around waist, red wide-leg street dance pants with jacquard side stripes --ar 3:4"
+          }
+        },
+        set2_qipao: {
+          option_a: {
+            title: "腊梅绣与灯笼收口长袖 (Plum Blossom & Sleeve Detail)",
+            costumeDesc: "一枝傲雪金腊梅自侧腰盘旋而下，复古灯笼收口长袖在现代舞旋转舒展时形成波浪形褶皱，美不胜收。",
+            detailTitle: "03 PLUM BLOSSOM EMBROIDERY & SLEEVE DETAIL",
+            detailDesc: "梅花绣与灯笼袖细节，金梅枝干灵动攀附",
+            image: "/wardrobe_crops/set2_a_sam.jpg",
+            detailImage: "/wardrobe_crops/set2_a_sam_detail.jpg",
+            highlightPills: ["主唱", "金梅绽放", "灯笼收口袖", "旋转飘拂", "舞动诗意"],
+            loraPrompt: "Sam, graceful dancer, lantern puff sleeve red qipao, golden blooming plum blossom branch embroidered sweeping across skirt --ar 3:4"
+          },
+          option_b: {
+            title: "幽香兰花金绣与立体褶皱 (Orchid Embroidery & Draping)",
+            costumeDesc: "胸腰处大师级斜向立体密褶，像琴弦般收紧腰身，兰花金丝刺绣顺着褶裥蔓延，充满雕塑般的身体线条感。",
+            detailTitle: "03 ORCHID EMBROIDERY & DRAPING DETAIL",
+            detailDesc: "兰花金绣与褶裥细节，斜向放射状手工密褶",
+            image: "/wardrobe_crops/set2_b_sam.jpg",
+            detailImage: "/wardrobe_crops/set2_b_sam_detail.jpg",
+            highlightPills: ["主唱", "立体斜褶", "幽谷金兰", "雕塑线条", "高定剪裁"],
+            loraPrompt: "Sam, red couture qipao gown with sculptural diagonal pleated draping across waist, elegant gold orchid embroidery --ar 3:4"
           }
         }
       }

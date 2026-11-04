@@ -13,11 +13,11 @@ export const lyricsData = [
     bgGradient: 'from-red-950/40 via-zinc-900 to-zinc-950',
     borderColor: 'border-red-500/30',
     lines: [
-      { singer: 'Moon (Intro特邀领唱)', role: '唯美引子', text: '【Intro独白与引子】Yeah, light it up! 点燃第一盏心灯，让善意穿透长夜...', isHighlight: true },
-      { singer: 'Coco', role: '嘻哈街舞', text: 'Yeah, light it up!' },
-      { singer: 'Kitty', role: '根脉深植', text: '新年到' },
-      { singer: '茵茵 & Sam', role: '双人合唱', text: 'You know what to do' },
-      { singer: 'Alicia (京腔领唱)', role: '京腔国粹', text: '【京腔领唱】红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！', isHighlight: true }
+      { singer: 'Moon (主唱)', role: '唯美引子', text: '【主唱 Intro 独白与引子】Yeah, light it up! 点燃第一盏心灯，让善意穿透长夜...', isHighlight: true },
+      { singer: 'Coco (主唱)', role: '嘻哈街舞', text: 'Yeah, light it up!' },
+      { singer: 'Kitty (主唱)', role: '根脉深植', text: '新年到' },
+      { singer: '茵茵 & Sam (主唱)', role: '双人合唱', text: 'You know what to do' },
+      { singer: 'Alicia (特邀京腔领唱)', role: '京腔国粹', text: '【特邀京腔领唱】红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！', isHighlight: true }
     ]
   },
   {
@@ -175,12 +175,12 @@ export default function LyricsWorkspace({ currentSec, onSeekSec, onSelectScene }
 
   const singers = [
     { id: 'all', label: '全员全曲 (6人)' },
-    { id: 'moon', label: 'Moon (Intro)' },
-    { id: 'alicia', label: 'Alicia (京腔)' },
-    { id: 'coco', label: 'Coco (Rap)' },
-    { id: 'sam', label: 'Sam (现代舞)' },
-    { id: 'yinyin', label: '茵茵 (生命Idol)' },
-    { id: 'kitty', label: 'Kitty (根脉传承)' },
+    { id: 'alicia', label: 'Alicia (特邀京腔领唱)' },
+    { id: 'moon', label: 'Moon (主唱)' },
+    { id: 'coco', label: 'Coco (主唱)' },
+    { id: 'kitty', label: 'Kitty (主唱)' },
+    { id: 'yinyin', label: '茵茵 (主唱)' },
+    { id: 'sam', label: 'Sam (主唱)' },
     { id: 'chorus', label: '大合唱' }
   ];
 
@@ -226,7 +226,7 @@ export default function LyricsWorkspace({ currentSec, onSeekSec, onSelectScene }
               </span>
             </h2>
             <p className="text-xs text-zinc-400 mt-0.5">
-              点击任意段落卡片可联动音轨跳转播放；标明 6 位主角（5位主唱 + 1位Intro领唱）的人声分工
+              点击任意段落卡片可联动音轨跳转播放；标明 6 位主角（1位特邀京腔领唱 + 5位主唱）的人声分工
             </p>
           </div>
         </div>

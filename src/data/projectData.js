@@ -13,7 +13,7 @@ export const initialProjectData = {
     bpm: 122,
     audioSrc: "/audio/official_track.mp3",
     productionPipeline: [
-      { step: "01", name: "角色与妆造", desc: "Alicia(京腔)/Coco(潮酷)/Kitty/茵茵/Sam 5人锁定" },
+      { step: "01", name: "角色与妆造", desc: "5位主唱(Moon/Coco/Kitty/茵茵/Sam)+1位特邀领唱Alicia(京腔)" },
       { step: "02", name: "服装二选一", desc: "嘻哈工装(红韵/红潮) & 盛典旗袍(和韵/金韵)" },
       { step: "03", name: "概念场景库", desc: "龙鼓大院/水墨书斋/月影深闺/竹海晨光/漓江破晓" },
       { step: "04", name: "分镜四大方程式", desc: "歌词分段 + 建议场景 + 参与人物 = 画面效果图" },
@@ -99,33 +99,33 @@ export const initialProjectData = {
     }
   },
 
-  // 6 位核心主角对应关系（5位主唱 + 1位Intro特邀领唱，与官方参考图完全对齐）
+  // 6 位核心主角阵容（5位主唱: Moon/Coco/Kitty/茵茵/Sam + 1位特邀京腔领唱: Alicia）
   characters: [
     {
+      id: "char_alicia",
+      name: "Alicia (特邀领唱)",
+      role: "特邀领唱 · 京腔国粹 · 归家导航",
+      vibe: "Cinematic · Traditional Meets Modern · Clear Voice",
+      costume: "灰色时尚西装与复古红框眼镜，现代知性融合国风红灯笼意象",
+      image: "/characters/char_01_office.jpg",
+      loraKeywords: "Alicia, Asian woman in grey stylish blazer, round glasses, dark hair with blunt bangs, singing Peking opera pose, red lanterns in background",
+      lyricsPart: "【特邀京腔领唱】红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！"
+    },
+    {
       id: "char_moon",
-      name: "Moon (Intro 特邀领唱)",
-      role: "唯美引子 · 优雅之声 · 蓝调启航",
+      name: "Moon",
+      role: "主唱 · Intro 启航 · 唯美蓝调之声",
       vibe: "Regal · Deep Emotion · Cobalt Blue · Silky Vocal",
       tagline: "点燃第一盏灯火，引万千繁星共鸣",
       costume: "皇家钴蓝风琴褶长裙、飘带领结、气球袖、闪钻耳坠，端庄大气",
       image: "/characters/char_06_moon_hd.jpg",
       loraKeywords: "Moon, elegant Asian female singer, wavy dark brown hair, cobalt blue pleated silk evening gown, ribbon tie neck, long bishop sleeves, sparkling diamond drop earrings, singing into retro microphone",
-      lyricsPart: "【Intro 独白与引子】Yeah, light it up! / 点燃这第一盏心灯，让善意穿透长夜..."
-    },
-    {
-      id: "char_alicia",
-      name: "Alicia (京腔领唱)",
-      role: "京腔国粹 · 归家导航",
-      vibe: "Cinematic · Traditional Meets Modern · Clear Voice",
-      costume: "灰色时尚西装与复古红框眼镜，现代知性融合国风红灯笼意象",
-      image: "/characters/char_01_office.jpg",
-      loraKeywords: "Alicia, Asian woman in grey stylish blazer, round glasses, dark hair with blunt bangs, singing Peking opera pose, red lanterns in background",
-      lyricsPart: "【京腔】红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！"
+      lyricsPart: "【主唱 Intro 启航】Yeah, light it up! / 点燃这第一盏心灯，让善意穿透长夜..."
     },
     {
       id: "char_coco",
       name: "Coco",
-      role: "街舞活力 · 嘻哈 Rap · Swag 担当",
+      role: "主唱 · 街舞活力 · 嘻哈 Rap · Swag 担当",
       vibe: "Be Real · Swag · Hip-hop · Never Lay Low",
       tagline: "We never lay low / Swag 刻在血脉",
       costume: "Balenciaga 黑色宽松短袖、马丁靴、双编发、翡翠玉坠",
@@ -136,7 +136,7 @@ export const initialProjectData = {
     {
       id: "char_kitty",
       name: "Kitty",
-      role: "根脉深植 · 敬茶奉献 · 成熟大爱",
+      role: "主唱 · 根脉深植 · 敬茶奉献 · 成熟大爱",
       vibe: "Rooted · Resilient · Warm · Sincere",
       tagline: "外面的风浪再大，根脉依然在心底绕",
       costume: "黑色无袖立领衬衫、干练盘发带淡紫发圈、手臂纹身、双手稳重",
@@ -147,7 +147,7 @@ export const initialProjectData = {
     {
       id: "char_yinyin",
       name: "茵茵 (YIN YIN)",
-      role: "优雅旋转 · 慈爱温润 · 生命 Idol",
+      role: "主唱 · 优雅旋转 · 慈爱温润 · 生命 Idol",
       vibe: "Grace · Elegance · Compassion · Light Bearer",
       tagline: "Grace in every chapter / 点燃心灯",
       costume: "白色短西装、黑色飘逸长裙、金色挑染、蝴蝶胸针、舒展舞姿",
@@ -158,7 +158,7 @@ export const initialProjectData = {
     {
       id: "char_sam",
       name: "Sam",
-      role: "现代舞动 · 南洋深海 · 青春燃力",
+      role: "主唱 · 现代舞动 · 南洋深海 · 青春燃力",
       vibe: "Energetic · Natural · Modern Movement · Passion",
       tagline: "跨越南洋的深海，一路燃到这舞台",
       costume: "简约黑T、直筒修身牛仔裤、白球鞋、金色挑染公主半编发、圆环耳环",
@@ -245,13 +245,13 @@ export const initialProjectData = {
       endSec: 39,
 
       lyricsSnippet: "Moon: '【Intro 独白引唱】点燃第一盏心灯，让善意穿透长夜...'\nCoco: 'Yeah, light it up!' (00:03)\nKitty: '新年到' (00:06)\n茵茵 & Sam: 'You know what to do' (00:08)\nAlicia (京腔): '红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！' (00:12-00:26)",
-      singerHighlight: "Moon (Intro领唱) · Alicia (京腔领唱) · Coco · Kitty · 茵茵 · Sam",
+      singerHighlight: "Alicia (特邀京腔领唱) · Moon (主唱) · Coco (主唱) · Kitty (主唱) · 茵茵 (主唱) · Sam (主唱)",
       suggestedEnvironment: "华灯古楼 · 龙鼓大院水浸红绸",
       environmentId: "env_04",
       participatingCast: [
-        { name: "Moon", role: "Intro 优雅引唱 (钴蓝礼服 / 祥云红装)" },
-        { name: "Alicia", role: "京腔领唱 (手掐传统旦角兰花指)" },
-        { name: "Coco", role: "街头起范 (Balenciaga / 红韵工装)" }
+        { name: "Alicia", role: "特邀领唱 (京腔国粹 / 旦角身段)" },
+        { name: "Moon", role: "主唱 (Intro 启航 / 唯美之声)" },
+        { name: "Coco", role: "主唱 (街舞起范 / 嘻哈 Swag)" }
       ],
       wardrobeNote: "Alicia 灰西装撞色传统红灯笼 / Coco 选定《红韵》嘻哈工装",
 

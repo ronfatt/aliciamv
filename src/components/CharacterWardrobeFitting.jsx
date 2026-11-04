@@ -57,7 +57,7 @@ export default function CharacterWardrobeFitting() {
                 MC 主角换装视觉效果库 (Character Wardrobe Fitting & Visuals)
               </h3>
               <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-gradient-to-r from-red-500/20 to-amber-500/20 text-amber-300 border border-amber-500/30 font-semibold">
-                6位主角各别分开独立视觉 (5位主唱+1位Intro)
+                6位主角各别分开独立视觉 (1位特邀京腔领唱 + 5位主唱)
               </span>
               <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-300 border border-zinc-700">
                 支持原设对比与工艺微距

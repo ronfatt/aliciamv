@@ -43,7 +43,7 @@ export default function Navbar({
     { 
       id: 'characters', 
       label: 'MC主角定妆', 
-      sub: '6位主角全卡司锁定', 
+      sub: '1位特邀领唱 + 5位主唱', 
       icon: Users, 
       badge: '6 位全卡司' 
     },

@@ -17,7 +17,7 @@ export default function CharacterRoster({ characters }) {
             <h3 className="text-sm font-bold text-white flex items-center gap-2">
               MV 主角人物设定资产库 (Character Cast & References)
               <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-pink-500/10 text-pink-300 border border-pink-500/20">
-                6位全主角锁定 (5位主唱 + 1位Intro领唱)
+                6位全主角锁定 (1位特邀京腔领唱 + 5位主唱)
               </span>
             </h3>
             <p className="text-[11px] text-zinc-400">
