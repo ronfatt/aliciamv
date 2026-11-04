@@ -104,7 +104,7 @@ export default function AudioPlayer({
   );
 
   return (
-    <section className="bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 border-b border-zinc-800/80 px-4 lg:px-8 py-3">
+    <section className="sticky bottom-0 z-40 bg-[#090a0f]/95 backdrop-blur-xl border-t border-zinc-800/80 px-4 lg:px-8 py-2.5 shadow-2xl shadow-black">
       <audio
         ref={audioRef}
         src={effectiveAudioSrc}

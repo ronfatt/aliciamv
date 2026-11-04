@@ -11,8 +11,23 @@ import CharacterRoster from './components/CharacterRoster';
 import CharacterWardrobeFitting from './components/CharacterWardrobeFitting';
 import EnvironmentGallery from './components/EnvironmentGallery';
 import WardrobeReviewModal from './components/WardrobeReviewModal';
+import LyricsWorkspace from './components/LyricsWorkspace';
+import ReviewWorkspace from './components/ReviewWorkspace';
 import { initialProjectData } from './data/projectData';
-import { Sparkles, Layers, ArrowRight, RefreshCw, HelpCircle, Film, ExternalLink, BookOpen, Shirt, Compass } from 'lucide-react';
+import { 
+  Sparkles, 
+  Layers, 
+  ArrowRight, 
+  RefreshCw, 
+  HelpCircle, 
+  Film, 
+  ExternalLink, 
+  BookOpen, 
+  Shirt, 
+  Compass,
+  Users,
+  MessageSquare
+} from 'lucide-react';
 
 const STORAGE_KEY = 'alicia_mv_scenes_v7';
 const WARDROBE_KEY = 'alicia_mv_wardrobe_v1';
@@ -20,6 +35,9 @@ const WARDROBE_KEY = 'alicia_mv_wardrobe_v1';
 export default function App() {
   const [projectInfo] = useState(initialProjectData.info);
   
+  // 平台当前工作台选项卡 ('storyboard' | 'characters' | 'wardrobe' | 'environments' | 'lyrics' | 'review')
+  const [activeTab, setActiveTab] = useState('storyboard');
+
   // 从 LocalStorage 加载服装选择
   const [wardrobeData, setWardrobeData] = useState(() => {
     try {
@@ -246,20 +264,168 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#090a0f] text-slate-100 flex flex-col selection:bg-indigo-500/30">
       
-      {/* 顶部导航 */}
+      {/* 平台级导航头部 (包含 6 大工作台切换 Tabs) */}
       <Navbar
         projectInfo={projectInfo}
         scenes={scenes}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
         activeView={activeView}
         setActiveView={setActiveView}
-        onOpenFeedback={() => setIsFeedbackOpen(true)}
         onOpenNewScene={() => setIsNewSceneOpen(true)}
-        onOpenLyrics={() => setIsLyricsOpen(true)}
-        onOpenWardrobe={() => setIsWardrobeOpen(true)}
         feedbackCount={totalPendingFeedback}
+        onResetData={handleResetData}
       />
 
-      {/* 音频与分镜联动条 */}
+      {/* 主体独立工作台区域 (按选中 Tab 显示对应功能，彻底告别单页无休止滚动) */}
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 pb-28">
+
+        {/* 1. 🎬 智能分镜流工作台 */}
+        {activeTab === 'storyboard' && (
+          <div className="space-y-6 animate-fadeIn">
+            {/* 生产流水线与公式横幅 */}
+            <section className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-indigo-950/40 via-purple-950/20 to-zinc-950 border border-indigo-900/30 p-5">
+              <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-2 w-2 rounded-full bg-indigo-400 animate-ping" />
+                    <h2 className="text-sm font-bold text-indigo-300 tracking-wide uppercase">
+                      分镜方程式与 4 阶演化管线 (Formula & Production Pipeline)
+                    </h2>
+                  </div>
+                  <p className="text-xs text-zinc-300 font-medium">
+                    【歌词分段】 + 【场景建议】 + 【出镜人物】 ⟹ 【生成画面效果图 / 视频】 + 【画面要求与描述】
+                  </p>
+                  <p className="text-[11px] text-zinc-400">
+                    点击任意镜头即可查看「提示词 ➔ 静帧 ➔ 动态推演 ➔ 调色成片」四阶蜕变与点对点打标意见
+                  </p>
+                </div>
+
+                {/* 4 步流转指示 */}
+                <div className="flex items-center gap-1.5 overflow-x-auto text-[11px] font-medium text-zinc-400">
+                  {projectInfo.productionPipeline.map((step, idx) => (
+                    <div key={step.step} className="flex items-center gap-1.5">
+                      <div className="px-2.5 py-1 rounded-lg bg-zinc-900/80 border border-zinc-800 text-zinc-300 whitespace-nowrap">
+                        <span className="text-indigo-400 font-mono mr-1.5">{step.step}</span>
+                        <span>{step.name}</span>
+                      </div>
+                      {idx < projectInfo.productionPipeline.length - 1 && (
+                        <ArrowRight className="w-3 h-3 text-zinc-600 shrink-0" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+
+            {/* 过滤器与工具栏 */}
+            <StatusFilter
+              scenes={scenes}
+              activeFilter={activeFilter}
+              setActiveFilter={setActiveFilter}
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
+              sortBy={sortBy}
+              setSortBy={setSortBy}
+            />
+
+            {/* 核心分镜展示区：网格故事板 / 时间轴流 */}
+            <StoryboardGrid
+              scenes={filteredScenes}
+              onOpenModal={handleOpenModal}
+              currentSec={currentSec}
+              activeView={activeView}
+              onToggleStatus={handleToggleStatus}
+            />
+          </div>
+        )}
+
+        {/* 2. 👥 MC主角定妆工作台 */}
+        {activeTab === 'characters' && (
+          <div className="space-y-6 animate-fadeIn">
+            <CharacterRoster characters={initialProjectData.characters} />
+          </div>
+        )}
+
+        {/* 3. 👗 换装试衣与定稿工作台 */}
+        {activeTab === 'wardrobe' && (
+          <div className="space-y-6 animate-fadeIn">
+            {/* 造型二选一定稿决策横幅 */}
+            <section className="bg-gradient-to-r from-red-950/60 via-zinc-950 to-zinc-950 border border-red-500/30 rounded-2xl p-4 sm:p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xl shadow-red-500/5">
+              <div className="flex items-center gap-3.5">
+                <div className="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/40 text-red-400 flex items-center justify-center shrink-0">
+                  <Shirt className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-sm font-bold text-white">MV 2套服装造型定稿决策</h3>
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-red-500/20 text-red-300 font-mono">
+                      各有 2 组设计待选
+                    </span>
+                  </div>
+                  <p className="text-xs text-zinc-400 mt-0.5">
+                    造型一：嘻哈工装 (已选: <strong className="text-zinc-200">{wardrobeData?.set1_streetwear?.selectedOption === 'option_a' ? '红韵' : '红潮'}</strong>) · 造型二：盛典旗袍 (已选: <strong className="text-zinc-200">{wardrobeData?.set2_qipao?.selectedOption === 'option_a' ? '和韵新春' : '金韵华裳'}</strong>)
+                  </p>
+                </div>
+              </div>
+
+              <button
+                onClick={() => setIsWardrobeOpen(true)}
+                className="w-full md:w-auto px-4 py-2 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-red-600/25 flex items-center justify-center gap-1.5 transition-all active:scale-95 shrink-0"
+              >
+                <span>进入造型二选一投票台</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </section>
+
+            {/* 5 位主角各别分开的独立换装视觉效果库 */}
+            <CharacterWardrobeFitting />
+          </div>
+        )}
+
+        {/* 4. 🏮 概念场景画廊工作台 */}
+        {activeTab === 'environments' && (
+          <div className="space-y-6 animate-fadeIn">
+            <EnvironmentGallery environments={initialProjectData.environments} />
+          </div>
+        )}
+
+        {/* 5. 📜 官方歌词全案工作台 */}
+        {activeTab === 'lyrics' && (
+          <div className="space-y-6 animate-fadeIn">
+            <LyricsWorkspace
+              currentSec={currentSec}
+              onSeekSec={(sec) => setCurrentSec(sec)}
+              onSelectScene={(sceneNum) => {
+                const target = scenes.find(s => s.number === sceneNum);
+                if (target) {
+                  setSelectedScene(target);
+                  setModalStage('stage4_final');
+                }
+              }}
+            />
+          </div>
+        )}
+
+        {/* 6. 📋 审片与修改清单工作台 */}
+        {activeTab === 'review' && (
+          <div className="space-y-6 animate-fadeIn">
+            <ReviewWorkspace
+              scenes={scenes}
+              projectInfo={projectInfo}
+              onToggleFeedbackStatus={handleToggleFeedbackStatus}
+              onDeleteFeedback={handleDeleteFeedback}
+              onOpenSceneModal={(scene) => {
+                setSelectedScene(scene);
+                setModalStage('stage4_final');
+              }}
+            />
+          </div>
+        )}
+
+      </main>
+
+      {/* 底部常驻智能音频播放条 (全工作台持久伴听，不阻挡内容) */}
       <AudioPlayer
         audioSrc={projectInfo.audioSrc}
         scenes={scenes}
@@ -268,129 +434,6 @@ export default function App() {
         activeSceneId={selectedScene?.id}
         onSelectScene={(scene) => handleOpenModal(scene)}
       />
-
-      {/* 主体工作区 */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 space-y-6">
-        
-        {/* 造型二选一决策横幅 (解决两套服装各有两个方案待定痛点) */}
-        <section className="bg-gradient-to-r from-red-950/60 via-zinc-950 to-zinc-950 border border-red-500/30 rounded-2xl p-4 sm:p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-xl shadow-red-500/5">
-          <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/40 text-red-400 flex items-center justify-center shrink-0">
-              <Shirt className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h3 className="text-sm font-bold text-white">MV 2套服装造型定稿决策中</h3>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-red-500/20 text-red-300 font-mono">
-                  各有 2 组设计待选
-                </span>
-              </div>
-              <p className="text-xs text-zinc-400 mt-0.5">
-                造型一：嘻哈工装 (已选: <strong className="text-zinc-200">{wardrobeData?.set1_streetwear?.selectedOption === 'option_a' ? '红韵' : '红潮'}</strong>) · 造型二：盛典旗袍 (已选: <strong className="text-zinc-200">{wardrobeData?.set2_qipao?.selectedOption === 'option_a' ? '和韵新春' : '金韵华裳'}</strong>)
-              </p>
-            </div>
-          </div>
-
-          <button
-            onClick={() => setIsWardrobeOpen(true)}
-            className="w-full md:w-auto px-4 py-2 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold text-xs rounded-xl shadow-lg shadow-red-600/25 flex items-center justify-center gap-1.5 transition-all active:scale-95 shrink-0"
-          >
-            <span>进入造型二选一评审台</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </button>
-        </section>
-
-        {/* 生产流水线与痛点解决横幅 */}
-        <section className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-indigo-950/40 via-purple-950/20 to-zinc-950 border border-indigo-900/30 p-5">
-          <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <span className="flex h-2 w-2 rounded-full bg-indigo-400 animate-ping" />
-                <h2 className="text-sm font-bold text-indigo-300 tracking-wide uppercase">
-                  全流程 AI 影视制作演化管线 (Production Pipeline)
-                </h2>
-              </div>
-              <p className="text-xs text-zinc-400 max-w-2xl leading-relaxed">
-                无需在 WhatsApp 反复发送碎片图片与样片。点击任意镜头即可查看「提示词 ➔ 静帧 ➔ 动态推演 ➔ 调色成片」四阶蜕变，精准留下打标意见，一键导出修改简报。
-              </p>
-            </div>
-
-            {/* 4 步流转指示 */}
-            <div className="flex items-center gap-1.5 overflow-x-auto text-[11px] font-medium text-zinc-400">
-              {projectInfo.productionPipeline.map((step, idx) => (
-                <div key={step.step} className="flex items-center gap-1.5">
-                  <div className="px-2.5 py-1 rounded-lg bg-zinc-900/80 border border-zinc-800 text-zinc-300 whitespace-nowrap">
-                    <span className="text-indigo-400 font-mono mr-1.5">{step.step}</span>
-                    <span>{step.name}</span>
-                  </div>
-                  {idx < projectInfo.productionPipeline.length - 1 && (
-                    <ArrowRight className="w-3 h-3 text-zinc-600 shrink-0" />
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 5位主角人物设定与多视图参考资产库 */}
-        <CharacterRoster characters={initialProjectData.characters} />
-
-        {/* MC主角人物设定资产 - 换装后独立视觉效果库 (第一套工装 / 第二套旗袍) */}
-        <CharacterWardrobeFitting />
-
-        {/* 5大核心概念场景美术馆 */}
-        <EnvironmentGallery environments={initialProjectData.environments} />
-
-        {/* 过滤器与工具栏 */}
-        <StatusFilter
-          scenes={scenes}
-          activeFilter={activeFilter}
-          setActiveFilter={setActiveFilter}
-          searchQuery={searchQuery}
-          setSearchQuery={setSearchQuery}
-          sortBy={sortBy}
-          setSortBy={setSortBy}
-        />
-
-        {/* 核心展示区：网格故事板 / 时间轴流 */}
-        <StoryboardGrid
-          scenes={filteredScenes}
-          onOpenModal={handleOpenModal}
-          currentSec={currentSec}
-          activeView={activeView}
-          onToggleStatus={handleToggleStatus}
-        />
-
-      </main>
-
-      {/* 底部 Footer */}
-      <footer className="mt-16 border-t border-zinc-900 bg-black/40 py-6 px-4 text-center text-xs text-zinc-500">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
-            <span>© 2026 {projectInfo.director}</span>
-            <span>•</span>
-            <span>{projectInfo.title}</span>
-          </div>
-
-          <div className="flex items-center gap-4 text-zinc-400">
-            <button
-              onClick={handleResetData}
-              className="flex items-center gap-1 text-[11px] hover:text-zinc-200 transition-colors"
-              title="恢复初始示范案例数据"
-            >
-              <RefreshCw className="w-3 h-3" />
-              <span>恢复示范数据</span>
-            </button>
-            <span>•</span>
-            <button
-              onClick={() => setIsFeedbackOpen(true)}
-              className="hover:text-amber-300 transition-colors"
-            >
-              导出评审清单
-            </button>
-          </div>
-        </div>
-      </footer>
 
       {/* 分镜详情灯箱 */}
       {selectedScene && (
@@ -407,7 +450,7 @@ export default function App() {
         />
       )}
 
-      {/* 批注修改清单抽屉 */}
+      {/* 批注修改清单抽屉 (仍保留快捷滑出支持) */}
       <FeedbackDrawer
         isOpen={isFeedbackOpen}
         onClose={() => setIsFeedbackOpen(false)}
