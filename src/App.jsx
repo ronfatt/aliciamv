@@ -30,7 +30,7 @@ import {
 } from 'lucide-react';
 
 const STORAGE_KEY = 'alicia_mv_scenes_v10';
-const WARDROBE_KEY = 'alicia_mv_wardrobe_v1';
+const WARDROBE_KEY = 'alicia_mv_wardrobe_v2';
 
 export default function App() {
   const [projectInfo] = useState(initialProjectData.info);
@@ -364,7 +364,7 @@ export default function App() {
                     </span>
                   </div>
                   <p className="text-xs text-zinc-400 mt-0.5">
-                    造型一：嘻哈工装 (已选: <strong className="text-zinc-200">{wardrobeData?.set1_streetwear?.selectedOption === 'option_a' ? '红韵' : '红潮'}</strong>) · 造型二：盛典旗袍 (已选: <strong className="text-zinc-200">{wardrobeData?.set2_qipao?.selectedOption === 'option_a' ? '和韵新春' : '金韵华裳'}</strong>)
+                    造型一：全新国潮嘻哈风 (已选: <strong className="text-zinc-200">{wardrobeData?.set1_streetwear?.selectedOption === 'option_a' ? '红韵新潮高定' : '红丝唐装潮流'}</strong>) · 造型二：全新盛典中国风 (已选: <strong className="text-zinc-200">{wardrobeData?.set2_qipao?.selectedOption === 'option_a' ? '中国风盛典华章' : '桃韵金枝舞裙'}</strong>)
                   </p>
                 </div>
               </div>

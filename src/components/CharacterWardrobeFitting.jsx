@@ -64,7 +64,7 @@ export default function CharacterWardrobeFitting() {
               </span>
             </div>
             <p className="text-xs text-zinc-400 mt-0.5">
-              点击下方切换【第一套国潮工装】与【第二套盛典旗袍】，查看每位主角专属剪裁、面料细节与 AI 换装效果
+              点击下方切换【第一套：国潮嘻哈风】与【第二套：盛典中国风】，查看每位主角专属剪裁、面料细节与 AI 换装效果
             </p>
           </div>
         </div>

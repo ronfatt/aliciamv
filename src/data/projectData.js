@@ -21,79 +21,84 @@ export const initialProjectData = {
     ]
   },
 
-  // 2 套服装待定方案（每套 2 组设计对比）
+  // 2 套全新高定服装方案（已彻底替换旧设计）
   wardrobe: {
     set1_streetwear: {
-      categoryName: "造型一：国潮嘻哈工装 (Dance & Hip-Hop Streetwear)",
+      categoryName: "造型一：全新国潮嘻哈街舞风 (New Contemporary Hip-Hop Streetwear)",
       usageScenes: "用于：Intro 街舞开局、舞狮互动、Verse 2 燃舞台、Outro 뛰어!(Jump!) 终极跳跃",
       selectedOption: "option_a",
       options: [
         {
           id: "option_a",
-          name: "《红韵 (RED RHYTHM)》",
-          code: "LOOK 02",
-          concept: "CHINESE CONTEMPORARY STREETWEAR X KOREAN POP X HIP HOP DANCE",
-          image: "/wardrobe/wardrobe_a1_red_rhythm.jpg",
-          vibe: "机能活力 · K-Pop 律动 · 抽绳工装",
+          name: "《红韵新潮高定舞台版》",
+          code: "HIP-HOP 2026-A",
+          concept: "CHINESE CONTEMPORARY STREETWEAR X HIP-HOP DANCE X STAGE ENERGY",
+          image: "/wardrobe/set1_xihua_02_kitty.png",
+          vibe: "红色扣饰 · 云纹夹克 · 斜织带机能 · 丝绸工装",
           details: [
-            "Coco: 云纹贴布与盘扣夹克 (Cloud Applique & Frog Fastener)",
-            "Kitty: 斜襟金属扣酷飒短装 (Asymmetric Placket Detail)",
-            "Sam: 中式回纹绣花露脐运动卫衣 (Lattice Embroidery Crop Top)",
-            "Yin Yin: 连帽斜襟织带设计 (Hooded Closure Detail)"
+            "茵茵: 红色斜织带连帽街舞套装 (Hooded Strapped Dancewear)",
+            "Kitty: 新中式红色扣饰街舞装 (Chinese Buckle Cropped Jacket)",
+            "Coco: 红色云纹短袖唐装棒球夹克 (Cloud Pattern Baseball Jacket)",
+            "Sam: 红黑格纹街舞运动造型 (Checkered Athletic Crop Top)",
+            "Moon & Alicia: 红丝唐装街头工装造型 (Silk Tang Jacket Cargo Look)"
           ],
-          pros: "极其适合大动作街舞和跳跃滞空（Jump!），抽绳与大口袋在舞动时动感十足，充满年轻 K-Pop 活力。"
+          pros: "高饱和度正红与暗黑撞色，唐装盘扣与现代嘻哈工装利落廓形，专为齐舞爆发力定制。"
         },
         {
           id: "option_b",
-          name: "《红潮 (RED DYNASTY)》",
-          code: "MV WARDROBE",
-          concept: "CHINESE ROOTS, MODERN BEATS, POP / HIP HOP / CHINESE SOUL",
-          image: "/wardrobe/wardrobe_a2_red_dynasty.jpg",
-          vibe: "奢华暗纹提花 · 高定国潮 · 盘扣古币",
+          name: "《红丝唐装与云纹潮流版》",
+          code: "HIP-HOP 2026-B",
+          concept: "RED SILK TANG SUIT X STREET CARGO X MODERN MOVEMENT",
+          image: "/wardrobe/set1_xihua_05_moon_alicia.png",
+          vibe: "真丝光泽 · 棒球领撞色 · 格纹拼边 · 动感舞台",
           details: [
-            "Coco: 纯黑传统盘扣对比细节 (Frog Closure Detail)",
-            "Kitty: 暗红云纹提花面料与黑边撞色 (Cloud Jacquard Fabric)",
-            "Sam: 腰部中式铜牌古币腰链 (Waist Construction Chain)",
-            "Yin Yin: 侧边立体压折工装细节 (Cargo Seam Detail)"
+            "Coco: 宽松大廓形云纹唐装短袖夹克",
+            "Moon: 高定立领红丝唐装配黑色束脚马丁靴",
+            "Kitty: 经典对称红盘扣修身短外套",
+            "Sam: 动感露脐黑红格纹街舞套装",
+            "茵茵: 飘逸连帽斜向几何织带战袍"
           ],
-          pros: "云纹提花面料在摄影机强光下极具丝绸高级质感，黑红撞色更具东方底蕴与气场。"
+          pros: "丝绸面料与云纹提花剪裁，在摄影机聚光灯下反光细腻奢华，充满现代青春动感。"
         }
       ]
     },
     set2_qipao: {
-      categoryName: "造型二：盛典金红旗袍 (Gala & Heritage Qipao)",
-      usageScenes: "用于：京腔开门红、年夜饭长桌、阿公阿嬷温情记忆、万盏心灯升空与大合唱",
-      selectedOption: "option_b",
+      categoryName: "造型二：全新盛典中国风 (New Grand Chinese Heritage & Dance Gown)",
+      usageScenes: "用于：京腔开门红、年夜饭长桌、阿公阿嬷温情记忆、万盏心灯大合唱",
+      selectedOption: "option_a",
       options: [
         {
           id: "option_a",
-          name: "《和韵新春 (SCARLET HARMONY)》",
-          code: "QIPAO COLLECTION",
-          concept: "TRADITIONAL SPIRIT, MODERN GRACE, BEAUTY IN HARMONY",
-          image: "/wardrobe/wardrobe_b1_scarlet_harmony.jpg",
-          vibe: "四季花卉 · 温润典雅 · 珠联璧合",
+          name: "《中国风盛典华章》",
+          code: "HERITAGE 2026-A",
+          concept: "TRADITIONAL EMBROIDERY, CLOUD COLLAR, HORSE-FACE SKIRT, CELESTIAL GRACE",
+          image: "/wardrobe/set2_zhongguo_01_yinyin.png",
+          vibe: "绣金云肩 · 桃枝金绣旗袍 · 朱红马面裙 · 盛典唐装",
           details: [
-            "Coco: 金菊绣与斜襟细节 (Chrysanthemum Embroidery)",
-            "Kitty: 偏襟盘扣与几何回字纹 (Geometric Embroidery)",
-            "Sam: 腊梅绣与灯笼收口长袖 (Plum Blossom & Sleeve Detail)",
-            "Yin Yin: 银杏绣与斜襟重叠裙摆 (Ginkgo Leaf Embroidery)"
+            "茵茵: 绣金云肩红舞裙 (Embroidered Cloud Collar Flowing Gown)",
+            "Moon & Alicia: 桃枝金绣红韵舞台旗袍 (Peach Blossom Branch Gold Qipao)",
+            "Coco: 朱红金绣唐装阔腿裤舞台装 (Gold Embroidered Tang Pantsuit)",
+            "Kitty: 朱红马面裙梅云金绣舞台套装 (Plum & Cloud Mamian Skirt)",
+            "Sam: 绯红桃枝汉服舞装 (Crimson Peach Blossom Hanfu Dance Dress)"
           ],
-          pros: "菊花、梅花、银杏的自然植物意象，文雅素洁，非常契合传统新春佳节的书香气息。"
+          pros: "汇聚云肩、马面裙、金绣唐装与桃枝旗袍等多重非遗国风精粹，端庄大气，与新春大爱主题完美呼应！"
         },
         {
           id: "option_b",
-          name: "《金韵华裳 (RED & GOLD)》",
-          code: "QIPAO COLLECTION",
-          concept: "TRADITIONAL BEAUTY, MODERN GRACE, MORE BEAUTY",
-          image: "/wardrobe/wardrobe_b2_red_and_gold.jpg",
-          vibe: "璀璨金绣 · 凤羽兰影 · 舞台聚光女王",
+          name: "《桃韵金枝华裳舞裙》",
+          code: "HERITAGE 2026-B",
+          concept: "GOLD EMBROIDERED SILK QIPAO X MAMIAN SKIRT X HEAVENLY DANCE",
+          image: "/wardrobe/set2_zhongguo_02_moon_alicia.png",
+          vibe: "生机桃枝 · 繁花织锦 · 宽袍大袖 · 礼仪之邦",
           details: [
-            "Coco: 节节高升竹影金绣 (Bamboo Embroidery & Closure)",
-            "Kitty: 庄重回纹金绣与高立领 (Lattice Gold Collar)",
-            "Sam: 幽香兰花金绣与腰部立体褶皱 (Orchid Embroidery & Draping Detail)",
-            "Yin Yin: 凤舞九天风羽金绣 (Phoenix Feather Gold Embroidery)"
+            "Alicia: 桃枝金绣立领正红戏曲华服",
+            "Kitty: 传统梅云金绣朱红马面长裙",
+            "Coco: 金线缠枝莲纹唐装配阔腿裤",
+            "Sam: 灵动飘逸绯红桃枝大袖汉服舞裙",
+            "Moon: 典雅修身桃枝金绣立领旗袍",
+            "茵茵: 层叠云肩与大摆红绸舞裙"
           ],
-          pros: "重工真金丝刺绣在暗景心灯前反光极度耀眼！Sam 的腰部斜向立体褶皱和 Yin Yin 的凤羽极具电影高级定制感！"
+          pros: "桃枝金绣意象呼应‘世外桃源’全新场景，在暗调心灯与金色天光前呈现出极致的电影级质感。"
         }
       ]
     }
