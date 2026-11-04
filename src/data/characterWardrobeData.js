@@ -56,8 +56,65 @@ export const characterWardrobeData = {
     }
   ],
 
-  // 5 位主角在不同服装套系下的独立视觉数据
+  // 6 位主角在不同服装套系下的独立视觉数据 (5位主唱 + 1位Intro特邀主角)
   characters: [
+    {
+      id: "char_moon",
+      name: "Moon (Intro 特邀领唱)",
+      role: "唯美引子 · 优雅之声 · 蓝调启航",
+      tagline: "点燃第一盏灯火，引万千繁星共鸣",
+      originalCasting: {
+        title: "原始定妆：皇家钴蓝风琴褶礼服",
+        vibe: "优雅之声 · 飘带领结 · 钻石耳坠 · 纯净深情",
+        image: "/characters/char_06_moon_hd.jpg"
+      },
+      wardrobeLooks: {
+        set1_streetwear: {
+          option_a: {
+            title: "国潮丝绒立领祥云战袍 x 潮酷红工装",
+            costumeDesc: "经典正红立领短外套，金丝云纹盘扣，高腰宽松束脚工装裤配黑色马丁靴，保留标志性波浪卷发与钻石耳坠，以从容高贵的声乐姿态领航全片。",
+            detailTitle: "云纹金绣与手工盘扣",
+            detailDesc: "胸前金丝云纹浮雕刺绣与高定盘结扣头，利落帅气。",
+            image: "/wardrobe_crops/set1_moon.jpg",
+            detailImage: "/wardrobe_crops/set1_moon_detail.jpg",
+            highlightPills: ["丝绒正红", "云纹金绣", "钻石耳饰", "Intro 领航"],
+            loraPrompt: "Moon, elegant Asian female singer, wavy dark brown hair, red Chinese contemporary streetwear jacket, gold cloud embroidery, diamond drop earrings, red cargo dance pants, concert stage lighting --ar 3:4"
+          },
+          option_b: {
+            title: "黑红撞色提花立领战袍 (Red Dynasty)",
+            costumeDesc: "暗红提花绸缎拼接黑色反折袖口，胸口黑金双色盘扣，展现出如同电影大片般的深邃开场气场。",
+            detailTitle: "云纹提花与手工黑盘扣",
+            detailDesc: "丝绸微光提花面料，立领黑边轮廓，利落且具有东方威严。",
+            image: "/wardrobe_crops/set1_moon.jpg",
+            detailImage: "/wardrobe_crops/set1_moon_detail.jpg",
+            highlightPills: ["暗纹提花", "黑金盘扣", "电影气场", "Intro 大引子"],
+            loraPrompt: "Moon, elegant Asian female singer, wavy hair, dark red jacquard frog button jacket, black cuffs, red cargo dance pants, dramatic rim lighting --ar 3:4"
+          }
+        },
+        set2_qipao: {
+          option_a: {
+            title: "四季繁花织锦旗袍 x 手捧心灯 (Scarlet Harmony)",
+            costumeDesc: "古典立领斜襟旗袍，素雅金色梅花与金菊刺绣，手捧发光暖黄心灯，将Intro引唱的温婉与春节大爱完美融为一体。",
+            detailTitle: "金梅斜襟与温润心灯",
+            detailDesc: "精致珠扣与胸前金线枝蔓，心灯透出的光芒柔和照亮脸庞。",
+            image: "/wardrobe_crops/set2_moon.jpg",
+            detailImage: "/wardrobe_crops/set2_moon_detail.jpg",
+            highlightPills: ["金梅刺绣", "暖光心灯", "珠玉斜襟", "新春祥和"],
+            loraPrompt: "Moon, elegant Asian woman with wavy dark hair and diamond earrings, red silk qipao, gold floral embroidery, holding glowing heart lantern, warm golden bokeh --ar 3:4"
+          },
+          option_b: {
+            title: "凤舞九天重工金绣真丝旗袍 (Red & Gold)",
+            costumeDesc: "全红真丝缎面旗袍，胸口金凤展翅腾飞刺绣，下摆金牡丹层叠绽放，手捧心灯，点燃全片第一盏大爱之光。",
+            detailTitle: "金凤腾飞重工盘金绣",
+            detailDesc: "金线立体打籽绣金凤，凤尾蔓延至侧边开衩，珠光璀璨。",
+            image: "/wardrobe_crops/set2_moon.jpg",
+            detailImage: "/wardrobe_crops/set2_moon_detail.jpg",
+            highlightPills: ["凤舞九天", "重工盘金", "大女主气场", "第一盏心灯"],
+            loraPrompt: "Moon, elegant Asian woman with wavy dark hair and diamond earrings, royal red Chinese qipao cheongsam with gold phoenix and floral embroidery, holding glowing heart paper lantern --ar 3:4"
+          }
+        }
+      }
+    },
     {
       id: "char_alicia",
       name: "Alicia (京腔领唱)",
@@ -125,7 +182,7 @@ export const characterWardrobeData = {
       originalCasting: {
         title: "原始定妆：街头 Oversized 酷黑潮服",
         vibe: "巴黎世家宽松T · 双编发 · 翡翠吊坠 · 马丁靴",
-        image: "/characters/char_03_coco.jpg"
+        image: "/characters/char_03_coco_hd.jpg"
       },
       wardrobeLooks: {
         set1_streetwear: {
@@ -182,7 +239,7 @@ export const characterWardrobeData = {
       originalCasting: {
         title: "原始定妆：干练盘发无袖立领衬衫",
         vibe: "黑色立领 · 优雅发簪 · 手臂纹身 · 稳重大爱",
-        image: "/characters/char_04_mature_cool.jpg"
+        image: "/characters/char_04_kitty_hd.jpg"
       },
       wardrobeLooks: {
         set1_streetwear: {
@@ -239,7 +296,7 @@ export const characterWardrobeData = {
       originalCasting: {
         title: "原始定妆：简约黑T牛仔修身舞服",
         vibe: "挑染公主半编发 · 圆环耳饰 · 现代舞爆发力",
-        image: "/characters/char_05_sam.jpg"
+        image: "/characters/char_05_sam_hd.jpg"
       },
       wardrobeLooks: {
         set1_streetwear: {
@@ -296,7 +353,7 @@ export const characterWardrobeData = {
       originalCasting: {
         title: "原始定妆：白色短西装黑长裙芭蕾定妆",
         vibe: "芭蕾手势 · 蝴蝶胸针 · 慈爱温润 · 纯净生命之光",
-        image: "/characters/char_02_yinyin.jpg"
+        image: "/characters/char_02_yinyin_hd.jpg"
       },
       wardrobeLooks: {
         set1_streetwear: {

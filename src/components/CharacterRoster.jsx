@@ -17,7 +17,7 @@ export default function CharacterRoster({ characters }) {
             <h3 className="text-sm font-bold text-white flex items-center gap-2">
               MV 主角人物设定资产库 (Character Cast & References)
               <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-pink-500/10 text-pink-300 border border-pink-500/20">
-                5位真实角色锁定
+                6位全主角锁定 (5位主唱 + 1位Intro领唱)
               </span>
             </h3>
             <p className="text-[11px] text-zinc-400">
@@ -29,13 +29,13 @@ export default function CharacterRoster({ characters }) {
           href="#wardrobe-fitting-section" 
           className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-medium transition-all hover:scale-[1.02] shrink-0"
         >
-          <span>换装后视觉效果 (5人独立)</span>
+          <span>换装后视觉效果 (6人独立)</span>
           <span className="text-amber-400 font-mono">↓</span>
         </a>
       </div>
 
-      {/* 5 位主角横向卡片流 */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
+      {/* 6 位主角横向卡片流 */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5">
         {characters.map(char => (
           <div
             key={char.id}

@@ -29,7 +29,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 
-const STORAGE_KEY = 'alicia_mv_scenes_v7';
+const STORAGE_KEY = 'alicia_mv_scenes_v8';
 const WARDROBE_KEY = 'alicia_mv_wardrobe_v1';
 
 export default function App() {

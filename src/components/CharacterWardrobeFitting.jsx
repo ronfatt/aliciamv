@@ -57,7 +57,7 @@ export default function CharacterWardrobeFitting() {
                 MC 主角换装视觉效果库 (Character Wardrobe Fitting & Visuals)
               </h3>
               <span className="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-gradient-to-r from-red-500/20 to-amber-500/20 text-amber-300 border border-amber-500/30 font-semibold">
-                5位主角各别分开独立视觉
+                6位主角各别分开独立视觉 (5位主唱+1位Intro)
               </span>
               <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-300 border border-zinc-700">
                 支持原设对比与工艺微距
@@ -152,11 +152,11 @@ export default function CharacterWardrobeFitting() {
         </div>
       </div>
 
-      {/* 5 位主角各别分开的卡片流 (独立 Card 展示) */}
+      {/* 6 位主角各别分开的卡片流 (独立 Card 展示) */}
       <div className={`grid gap-4 ${
         compareMode 
           ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' 
-          : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-5'
+          : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6'
       }`}>
         {characterWardrobeData.characters.map(char => {
           const look = char.wardrobeLooks[activeSetId]?.[activeOptionId] || char.wardrobeLooks[activeSetId]?.option_a;

@@ -43,9 +43,9 @@ export default function Navbar({
     { 
       id: 'characters', 
       label: 'MC主角定妆', 
-      sub: '5位真实角色锁定', 
+      sub: '6位主角全卡司锁定', 
       icon: Users, 
-      badge: '5 位主角' 
+      badge: '6 位全卡司' 
     },
     { 
       id: 'wardrobe', 

@@ -13,6 +13,7 @@ export const lyricsData = [
     bgGradient: 'from-red-950/40 via-zinc-900 to-zinc-950',
     borderColor: 'border-red-500/30',
     lines: [
+      { singer: 'Moon (Intro特邀领唱)', role: '唯美引子', text: '【Intro独白与引子】Yeah, light it up! 点燃第一盏心灯，让善意穿透长夜...', isHighlight: true },
       { singer: 'Coco', role: '嘻哈街舞', text: 'Yeah, light it up!' },
       { singer: 'Kitty', role: '根脉深植', text: '新年到' },
       { singer: '茵茵 & Sam', role: '双人合唱', text: 'You know what to do' },
@@ -173,7 +174,8 @@ export default function LyricsWorkspace({ currentSec, onSeekSec, onSelectScene }
   const [copied, setCopied] = useState(false);
 
   const singers = [
-    { id: 'all', label: '全员全曲' },
+    { id: 'all', label: '全员全曲 (6人)' },
+    { id: 'moon', label: 'Moon (Intro)' },
     { id: 'alicia', label: 'Alicia (京腔)' },
     { id: 'coco', label: 'Coco (Rap)' },
     { id: 'sam', label: 'Sam (现代舞)' },
@@ -198,6 +200,7 @@ export default function LyricsWorkspace({ currentSec, onSeekSec, onSelectScene }
   };
 
   const getSingerColor = (singerName) => {
+    if (singerName.includes('Moon')) return 'bg-sky-500/20 text-sky-300 border-sky-500/40';
     if (singerName.includes('Alicia')) return 'bg-red-500/20 text-red-300 border-red-500/40';
     if (singerName.includes('Coco')) return 'bg-amber-500/20 text-amber-300 border-amber-500/40';
     if (singerName.includes('Sam')) return 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40';
@@ -223,7 +226,7 @@ export default function LyricsWorkspace({ currentSec, onSeekSec, onSelectScene }
               </span>
             </h2>
             <p className="text-xs text-zinc-400 mt-0.5">
-              点击任意段落卡片可联动音轨跳转播放；标明 5 位主角领唱、Rap、京腔与齐唱分工
+              点击任意段落卡片可联动音轨跳转播放；标明 6 位主角（5位主唱 + 1位Intro领唱）的人声分工
             </p>
           </div>
         </div>
@@ -281,6 +284,7 @@ export default function LyricsWorkspace({ currentSec, onSeekSec, onSelectScene }
           const filteredLines = selectedSinger === 'all'
             ? sec.lines
             : sec.lines.filter(l => {
+                if (selectedSinger === 'moon') return l.singer.includes('Moon');
                 if (selectedSinger === 'alicia') return l.singer.includes('Alicia');
                 if (selectedSinger === 'coco') return l.singer.includes('Coco');
                 if (selectedSinger === 'sam') return l.singer.includes('Sam');

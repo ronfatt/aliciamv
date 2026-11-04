@@ -99,8 +99,19 @@ export const initialProjectData = {
     }
   },
 
-  // 5 位核心主角对应关系（与真实参考图完全对齐）
+  // 6 位核心主角对应关系（5位主唱 + 1位Intro特邀领唱，与官方参考图完全对齐）
   characters: [
+    {
+      id: "char_moon",
+      name: "Moon (Intro 特邀领唱)",
+      role: "唯美引子 · 优雅之声 · 蓝调启航",
+      vibe: "Regal · Deep Emotion · Cobalt Blue · Silky Vocal",
+      tagline: "点燃第一盏灯火，引万千繁星共鸣",
+      costume: "皇家钴蓝风琴褶长裙、飘带领结、气球袖、闪钻耳坠，端庄大气",
+      image: "/characters/char_06_moon_hd.jpg",
+      loraKeywords: "Moon, elegant Asian female singer, wavy dark brown hair, cobalt blue pleated silk evening gown, ribbon tie neck, long bishop sleeves, sparkling diamond drop earrings, singing into retro microphone",
+      lyricsPart: "【Intro 独白与引子】Yeah, light it up! / 点燃这第一盏心灯，让善意穿透长夜..."
+    },
     {
       id: "char_alicia",
       name: "Alicia (京腔领唱)",
@@ -118,7 +129,7 @@ export const initialProjectData = {
       vibe: "Be Real · Swag · Hip-hop · Never Lay Low",
       tagline: "We never lay low / Swag 刻在血脉",
       costume: "Balenciaga 黑色宽松短袖、马丁靴、双编发、翡翠玉坠",
-      image: "/characters/char_03_coco.jpg",
+      image: "/characters/char_03_coco_hd.jpg",
       loraKeywords: "Coco, curvy Asian dancer, Balenciaga black oversized t-shirt, combat boots, double braids, jade necklace, hip-hop dynamic rap pose",
       lyricsPart: "Yeah, light it up! / 舞狮鼓声传千里，We never lay low / 乘风破浪的先辈，Swag 刻在血脉"
     },
@@ -129,7 +140,7 @@ export const initialProjectData = {
       vibe: "Rooted · Resilient · Warm · Sincere",
       tagline: "外面的风浪再大，根脉依然在心底绕",
       costume: "黑色无袖立领衬衫、干练盘发带淡紫发圈、手臂纹身、双手稳重",
-      image: "/characters/char_04_mature_cool.jpg",
+      image: "/characters/char_04_kitty_hd.jpg",
       loraKeywords: "Kitty, stylish Asian woman, sleeveless black mandarin collar shirt, arm tattoo, holding traditional hot Chinese tea cup, calm confident smile",
       lyricsPart: "新年到 / 外面的风浪再大，根脉依然在心底绕 / 敬上一杯热茶，传承不只是一个 Title"
     },
@@ -140,7 +151,7 @@ export const initialProjectData = {
       vibe: "Grace · Elegance · Compassion · Light Bearer",
       tagline: "Grace in every chapter / 点燃心灯",
       costume: "白色短西装、黑色飘逸长裙、金色挑染、蝴蝶胸针、舒展舞姿",
-      image: "/characters/char_02_yinyin.jpg",
+      image: "/characters/char_02_yinyin_hd.jpg",
       loraKeywords: "Yin Yin, elegant woman, cropped white blazer, black flowing evening gown, ballet extension pose, holding warm glowing lantern light",
       lyricsPart: "红包里的祝福，装满期待把你当成宝 / 原来最珍贵的福气，不是自己多耀眼，而是别人需要时候，你化身那道光线"
     },
@@ -151,7 +162,7 @@ export const initialProjectData = {
       vibe: "Energetic · Natural · Modern Movement · Passion",
       tagline: "跨越南洋的深海，一路燃到这舞台",
       costume: "简约黑T、直筒修身牛仔裤、白球鞋、金色挑染公主半编发、圆环耳环",
-      image: "/characters/char_05_sam.jpg",
+      image: "/characters/char_05_sam_hd.jpg",
       loraKeywords: "Sam, athletic Asian dancer in black fitted t-shirt, blue jeans, white sneakers, hoop earrings, energetic jump and modern dance pose",
       lyricsPart: "穿破天空的鞭炮，那是世代的记号 / 跨越南洋的深海，一路燃到这舞台"
     }
@@ -233,11 +244,12 @@ export const initialProjectData = {
       startSec: 0,
       endSec: 39,
 
-      lyricsSnippet: "Coco: 'Yeah, light it up!' (00:03)\nKitty: '新年到' (00:06)\n茵茵 & Sam: 'You know what to do' (00:08)\nAlicia (京腔): '红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！' (00:12-00:26)",
-      singerHighlight: "Alicia (京腔主唱) · Coco · Kitty · 茵茵 · Sam",
+      lyricsSnippet: "Moon: '【Intro 独白引唱】点燃第一盏心灯，让善意穿透长夜...'\nCoco: 'Yeah, light it up!' (00:03)\nKitty: '新年到' (00:06)\n茵茵 & Sam: 'You know what to do' (00:08)\nAlicia (京腔): '红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！' (00:12-00:26)",
+      singerHighlight: "Moon (Intro领唱) · Alicia (京腔领唱) · Coco · Kitty · 茵茵 · Sam",
       suggestedEnvironment: "华灯古楼 · 龙鼓大院水浸红绸",
       environmentId: "env_04",
       participatingCast: [
+        { name: "Moon", role: "Intro 优雅引唱 (钴蓝礼服 / 祥云红装)" },
         { name: "Alicia", role: "京腔领唱 (手掐传统旦角兰花指)" },
         { name: "Coco", role: "街头起范 (Balenciaga / 红韵工装)" }
       ],
