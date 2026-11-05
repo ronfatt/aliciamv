@@ -57,9 +57,9 @@ export default function Navbar({
     { 
       id: 'environments', 
       label: '概念场景画廊', 
-      sub: '4大国风奇幻核心场景', 
+      sub: '2大影视核心场景 (龙鼓殿 & 桃花源)', 
       icon: Compass, 
-      badge: '4 大场景' 
+      badge: '2 大场景' 
     },
     { 
       id: 'lyrics', 

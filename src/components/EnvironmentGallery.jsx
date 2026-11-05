@@ -23,18 +23,18 @@ export default function EnvironmentGallery({ environments }) {
             <h3 className="text-sm font-bold text-white flex items-center gap-2">
               MV 核心视觉场景概念库 (Cinematic Concept Environments)
               <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                4大国风奇幻核心场景已锁定
+                2大核心影视场景已锁定 (龙鼓殿 & 桃花源)
               </span>
             </h3>
             <p className="text-[11px] text-zinc-400">
-              奇幻山水 · 山水石宫 · 玉色宫阙 · 桃花园（点击卡片查看多视角全景分镜机位与光影调度）
+              龙鼓殿（主殿/战鼓阵/高阁长廊等12机位） · 桃花源（溪畔石台/石庭/溪桥等6机位），点击卡片查看多视角机位与光影调度
             </p>
           </div>
         </div>
       </div>
 
-      {/* 4 组场景卡片网格 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {/* 2 组场景核心展示卡片网格 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {environments.map((env, idx) => (
           <div
             key={env.id}

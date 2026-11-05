@@ -18,7 +18,7 @@ export default function SceneCard({
     scene.generatedOutput?.imageUrl || 
     scene.evolution.stage4_final?.mediaUrl || 
     scene.evolution.stage3_motion?.mediaUrl ||
-    "/environments/qihuan_shanshui/晨光中的湖畔古亭-1.png";
+    "/environments/longgu_dian/日光下的华丽龙鼓殿堂.png";
 
   const pendingFeedbacks = scene.feedbacks?.filter(f => !f.resolved)?.length || 0;
 
