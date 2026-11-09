@@ -8,16 +8,16 @@ export const lyricsData = [
     startSec: 0,
     sceneId: 'sc_001',
     sceneNumber: 1,
-    title: '【Intro】京腔开门红 · 归家导航',
-    mood: '欢庆宏大 · 传统戏曲碰撞现代电音',
+    title: '【Intro & 京腔】龙鼓殿华灯初照 · 5位主唱启航与Alicia惊艳开门红',
+    mood: '欢庆宏大 · 传统京腔碰撞电音战鼓',
     bgGradient: 'from-red-950/40 via-zinc-900 to-zinc-950',
     borderColor: 'border-red-500/30',
     lines: [
-      { singer: 'Moon (主唱)', role: '唯美引子', text: '【主唱 Intro 独白与引子】Yeah, light it up! 点燃第一盏心灯，让善意穿透长夜...', isHighlight: true },
-      { singer: 'Coco (主唱)', role: '嘻哈街舞', text: 'Yeah, light it up!' },
-      { singer: 'Kitty (主唱)', role: '根脉深植', text: '新年到' },
-      { singer: '茵茵 & Sam (主唱)', role: '双人合唱', text: 'You know what to do' },
-      { singer: 'Alicia (特邀京腔领唱)', role: '京腔国粹', text: '【特邀京腔领唱】红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！', isHighlight: true }
+      { singer: 'Coco', role: '嘻哈起范', text: 'Yeah, light it up!' },
+      { singer: 'Kitty & Moon', role: '双人主唱', text: '新年到' },
+      { singer: '茵茵 & Sam', role: '双人合唱', text: 'You know what to do' },
+      { singer: 'Alicia (特邀京腔领唱)', role: '京腔国粹', text: '【特邀京腔领唱】红灯笼高挂，全城在欢呼！', isHighlight: true },
+      { singer: 'Alicia (特邀京腔领唱)', role: '京腔国粹', text: '【特邀京腔领唱】归家的导航，幸福已切入！', isHighlight: true }
     ]
   },
   {
@@ -26,15 +26,15 @@ export const lyricsData = [
     startSec: 39,
     sceneId: 'sc_002',
     sceneNumber: 2,
-    title: '【Verse 1】爆竹舞狮 · 根脉深植',
-    mood: '节奏升腾 · 街头年味与传统记忆',
+    title: '【Verse 1】龙鼓殿夜幕鼓阵 · 穿破天空的鞭炮与根脉交织',
+    mood: '节奏升腾 · 醒狮卡点与红包祝福',
     bgGradient: 'from-orange-950/40 via-zinc-900 to-zinc-950',
     borderColor: 'border-orange-500/30',
     lines: [
-      { singer: 'Sam', role: '现代舞动', text: '穿破天空的鞭炮，那是世代的记号' },
-      { singer: 'Coco', role: '嘻哈 Rap', text: '舞狮鼓声传千里，We never lay low' },
-      { singer: '茵茵', role: '慈爱温润', text: '红包里的祝福，装满期待把你当成宝' },
-      { singer: 'Kitty', role: '根脉传承', text: '外面的风浪再大，根脉依然在心底绕' }
+      { singer: 'Moon', role: '主唱', text: '穿破天空的鞭炮，那是世代的记号' },
+      { singer: 'Coco & Sam', role: '嘻哈舞狮', text: '舞狮鼓声传千里， We never lay low' },
+      { singer: '茵茵', role: '慈爱温情', text: '红包里的祝福，装满期待把你当成宝' },
+      { singer: 'Kitty & Sam & Moon', role: '三人合唱', text: '外面的风浪再大，根脉依然在心底绕', isHighlight: true }
     ]
   },
   {
@@ -43,15 +43,15 @@ export const lyricsData = [
     startSec: 68,
     sceneId: 'sc_003',
     sceneNumber: 3,
-    title: '【Rap 1】年夜饭长桌 · 阖家欢笑',
-    mood: '嘻哈律动 · 温情团聚与亲情依靠',
+    title: '【Rap 1】桃花源石庭晨光 · 一家团圆满屋欢笑',
+    mood: '嘻哈律动 · 围坐长席与岁月依靠',
     bgGradient: 'from-amber-950/40 via-zinc-900 to-zinc-950',
     borderColor: 'border-amber-500/30',
     lines: [
       { singer: 'Coco', role: '嘻哈 Rap', text: '一桌菜等一年久，就盼着这一刻来到' },
-      { singer: '茵茵', role: '生命 Idol', text: '一家团圆满屋欢笑，迎接新春多热闹' },
-      { singer: 'Kitty', role: '根脉深植', text: '提醒着我们珍惜，把岁月紧紧抓牢' },
-      { singer: 'Sam', role: '现代舞动', text: '眼前每一份爱，都是我们一生的依靠' }
+      { singer: '茵茵 & Moon', role: '双人合唱', text: '一家团圆满屋欢笑，迎接新春多热闹' },
+      { singer: 'Kitty & Coco', role: '双人合唱', text: '提醒着我们珍惜，把岁月紧紧抓牢' },
+      { singer: 'Sam', role: '沉稳依靠', text: '眼前每一份爱，都是我们一生的依靠', isHighlight: true }
     ]
   },
   {
@@ -60,16 +60,16 @@ export const lyricsData = [
     startSec: 86,
     sceneId: 'sc_004',
     sceneNumber: 4,
-    title: '【Pre-Chorus】阿公阿嬷牵过的手 · 接力破晓',
-    mood: '深情舒展 · 跨越代际的薪火温情',
+    title: '【Pre-Chorus】桃花源溪桥晨光 · 阿公阿嬷牵过的手',
+    mood: '深情舒展 · 跨越代际的薪火温情与心灯破晓',
     bgGradient: 'from-rose-950/40 via-zinc-900 to-zinc-950',
     borderColor: 'border-rose-500/30',
     lines: [
-      { singer: 'Coco & Sam', role: '双人合唱', text: '阿公阿嬷牵过的手，这份温暖我收好' },
+      { singer: 'Coco & Moon', role: '双人合唱', text: '阿公阿嬷牵过的手，这份温暖我收好' },
       { singer: '茵茵 & Kitty', role: '双人合唱', text: '那些接力过的爱，点亮前路的破晓' },
       { singer: 'Coco & Sam', role: '双人合唱', text: '曾有盏灯照亮我，穿过狂雨和风暴' },
-      { singer: '茵茵 & Kitty', role: '双人合唱', text: "Now it's my turn，把黑暗都燃烧" },
-      { singer: 'Kitty', role: '根脉深植', text: '准备好了没？' }
+      { singer: '茵茵 & Kitty & Moon & Sam', role: '四人合力爆发', text: "Now it's my turn，把黑暗都燃烧", isHighlight: true },
+      { singer: 'Kitty', role: '独白定音', text: '准备好了没？', isHighlight: true }
     ]
   },
   {
@@ -78,18 +78,20 @@ export const lyricsData = [
     startSec: 117,
     sceneId: 'sc_005',
     sceneNumber: 5,
-    title: '【Chorus 1】点燃心灯 Light It Up! · 善意无限接通',
-    mood: '高潮爆发 · 齐舞齐唱 · 震撼人心',
+    title: '【Chorus 1】桃花溪畔天然石台 · 点燃心灯！善意无限接通',
+    mood: '高潮爆发 · 双组对答齐唱 · 震撼人心',
     bgGradient: 'from-red-900/40 via-amber-950/30 to-zinc-950',
     borderColor: 'border-red-500/50',
     lines: [
-      { singer: '茵茵 & Kitty', role: '主唱', text: '点燃心灯！' },
-      { singer: 'Coco & Sam', role: '和声响应', text: '(Light it up!) 照亮整个夜空！' },
-      { singer: '茵茵 & Kitty', role: '主唱', text: '点燃心灯！' },
-      { singer: 'Coco & Sam', role: '和声响应', text: '(Pass it on!) 善意无限接通！' },
-      { singer: '大合唱 (All Cast)', role: '五人齐唱', text: '万千新年灯火连成 千家万户的希望', isHighlight: true },
-      { singer: '茵茵 & Sam / Kitty & Coco', role: '轮唱', text: '我的光，你的光' },
-      { singer: '大合唱 (All Cast)', role: '五人齐唱', text: '这份温暖，世世代代相传' }
+      { singer: '茵茵 & Kitty & Moon', role: '领唱组', text: '点燃心灯！' },
+      { singer: 'Coco & Sam', role: '力量对答', text: 'Light it up!' },
+      { singer: '茵茵 & Kitty & Moon', role: '领唱组', text: '照亮整个夜空！' },
+      { singer: '茵茵 & Kitty & Moon', role: '领唱组', text: '点燃心灯！' },
+      { singer: 'Coco & Sam', role: '力量对答', text: 'Pass it on!' },
+      { singer: '茵茵 & Kitty & Moon', role: '领唱组', text: '善意无限接通！' },
+      { singer: '大合唱 (All Cast)', role: '全员齐唱', text: '万千新年灯火连成 千家万户的希望', isHighlight: true },
+      { singer: '茵茵 & Sam / Kitty & Coco & Moon', role: '双组对唱', text: '我的光 / 你的光' },
+      { singer: '大合唱 (All Cast)', role: '全员齐唱', text: '这份温暖，世世代代相传', isHighlight: true }
     ]
   },
   {
@@ -98,17 +100,17 @@ export const lyricsData = [
     startSec: 145,
     sceneId: 'sc_006',
     sceneNumber: 6,
-    title: '【Rap 2】一盏灯火 · 化身那道光线',
-    mood: '思辨内省 · 慈悲与利他精神升华',
+    title: '【Rap 2】龙鼓殿夜色通明 · 6行大爱金句递进与化身光线',
+    mood: '思辨内省 · 慈悲大爱与利他哲学升华',
     bgGradient: 'from-blue-950/40 via-zinc-900 to-zinc-950',
     borderColor: 'border-blue-500/30',
     lines: [
       { singer: '茵茵', role: '生命 Idol', text: '一盏灯火，绝对不只照亮一个屋檐' },
       { singer: 'Coco', role: '嘻哈 Rap', text: '这份大爱，注定能够走到无限遥远' },
-      { singer: 'Kitty', role: '根脉深植', text: '一句好话、一次帮助、一个微笑的照面' },
-      { singer: 'Sam', role: '现代舞动', text: '能让寒冷冰封之地，瞬间切换成春天' },
-      { singer: '茵茵', role: '生命 Idol', text: '原来最珍贵的福气，不是自己多耀眼', isHighlight: true },
-      { singer: 'Coco & Sam', role: '双人合唱', text: '而是别人需要时候，你化身那道光线', isHighlight: true }
+      { singer: 'Kitty', role: '温情特写', text: '一句好话、一次帮助、一个微笑的照面' },
+      { singer: 'Sam & Moon', role: '双人合唱', text: '能让寒冷冰封之地 瞬间切换成春天' },
+      { singer: '茵茵 & Kitty', role: '双人合唱', text: '原来最珍贵的福气，不是自己多耀眼', isHighlight: true },
+      { singer: 'Coco & Sam & Moon', role: '三人合唱', text: '而是别人需要时候，你化身那道光线', isHighlight: true }
     ]
   },
   {
@@ -117,15 +119,15 @@ export const lyricsData = [
     startSec: 170,
     sceneId: 'sc_007',
     sceneNumber: 7,
-    title: '【Verse 2】跨越南洋深海 · 传承不只是 Title',
+    title: '【Verse 2】龙鼓殿月影大堂 · 跨越南洋深海与敬茶传承',
     mood: '坚定豪迈 · 华侨奋斗史与敬茶感恩',
     bgGradient: 'from-emerald-950/40 via-zinc-900 to-zinc-950',
     borderColor: 'border-emerald-500/30',
     lines: [
-      { singer: 'Sam', role: '现代舞动', text: '跨越南洋的深海，一路燃到这舞台' },
-      { singer: 'Coco', role: '嘻哈 Rap', text: '乘风破浪的先辈，Swag 刻在血脉' },
-      { singer: 'Kitty', role: '根脉奉献', text: '敬上一杯热茶，传承不只是一个 Title', isHighlight: true },
-      { singer: '茵茵', role: '生命 Idol', text: '化作那一道光芒，做别人生命里的 Idol' }
+      { singer: 'Moon & Sam', role: '南洋深海', text: '跨越南洋的深海，一路燃到这舞台' },
+      { singer: 'Coco & 茵茵', role: 'Swag 血脉', text: '乘风破浪的先辈，Swag刻在血脉' },
+      { singer: 'Kitty & Sam', role: '敬茶礼仪', text: '敬上一杯热茶，传承不只是一个 Title', isHighlight: true },
+      { singer: '茵茵 & Moon', role: '生命 Idol', text: '化作那一道光芒，做别人生命里的 Idol', isHighlight: true }
     ]
   },
   {
@@ -134,18 +136,21 @@ export const lyricsData = [
     startSec: 214,
     sceneId: 'sc_008',
     sceneNumber: 8,
-    title: '【Chorus 2 & 3】照亮浩瀚彼岸 · 众生觉心点亮',
+    title: '【Chorus 2 & 扩展】桃花源落英晨光 · 众生觉心与照亮浩瀚彼岸',
     mood: '终极升华 · 慈爱光与智慧光大觉醒',
     bgGradient: 'from-amber-950/40 via-red-950/30 to-zinc-950',
     borderColor: 'border-amber-500/40',
     lines: [
-      { singer: '大合唱 (All Cast)', role: '五人齐唱', text: '点燃心灯！(Light it up!) 照亮整个夜空！' },
-      { singer: '大合唱 (All Cast)', role: '五人齐唱', text: '点燃心灯！(Pass it on!) 善意无限接通！' },
-      { singer: '大合唱 (All Cast)', role: '五人齐唱', text: '万千新年灯火连成 千家万户的希望，我的光，你的光，这份温暖，世世代代相传！' },
-      { singer: '大合唱 (All Cast)', role: '高潮双连击', text: '点燃心灯！(Light it up!) 照亮浩瀚彼岸！', isHighlight: true },
-      { singer: '大合唱 (All Cast)', role: '高潮双连击', text: '点燃心灯！(Pass it on!) 众生觉心点亮！', isHighlight: true },
-      { singer: '大合唱 (All Cast)', role: '合唱', text: '感恩过去修正现在，创造未来的光芒！' },
-      { singer: '大合唱 (All Cast)', role: '合唱', text: '慈爱光、智慧光，让黑夜全退散！' }
+      { singer: '大合唱 (All Cast)', role: '全员齐唱', text: '点燃心灯！(Light it up!) 照亮整个夜空！' },
+      { singer: '大合唱 (All Cast)', role: '全员齐唱', text: '点燃心灯！(Pass it on!) 善意无限接通！' },
+      { singer: '大合唱 (All Cast)', role: '全员齐唱', text: '万千新年灯火连成 千家万户的希望' },
+      { singer: '大合唱 (All Cast)', role: '全员齐唱', text: '我的光，你的光' },
+      { singer: '大合唱 (All Cast)', role: '全员齐唱', text: '这份温暖，世世代代相传' },
+      { singer: '大合唱 (All Cast)', role: '扩展高潮', text: '【扩展】点燃心灯！(Light it up!) 照亮浩瀚彼岸！', isHighlight: true },
+      { singer: '大合唱 (All Cast)', role: '扩展高潮', text: '【扩展】点燃心灯！(Pass it on!) 众生觉心点亮！', isHighlight: true },
+      { singer: '大合唱 (All Cast)', role: '扩展高潮', text: '【扩展】感恩过去修正现在，创造未来的光芒' },
+      { singer: '大合唱 (All Cast)', role: '扩展高潮', text: '【扩展】慈爱光 智慧光' },
+      { singer: '大合唱 (All Cast)', role: '扩展高潮', text: '【扩展】清明闪耀 照见生命破晓', isHighlight: true }
     ]
   },
   {
@@ -154,17 +159,16 @@ export const lyricsData = [
     startSec: 270,
     sceneId: 'sc_009',
     sceneNumber: 9,
-    title: '【Outro】뛰어! (Jump!) · 薪火相传全城通明',
+    title: '【Outro】龙鼓殿主舞台齐舞 · 뛰어! (Jump!) 薪火相传全员滞空',
     mood: '终极爆点 · 全体腾空滞空 · 新春终章',
     bgGradient: 'from-purple-950/40 via-red-950/30 to-zinc-950',
     borderColor: 'border-purple-500/40',
     lines: [
-      { singer: 'Sam', role: '现代舞', text: '点燃心灯！' },
-      { singer: '茵茵', role: '生命 Idol', text: '新年快乐！' },
-      { singer: 'Coco', role: '嘻哈 Rap', text: 'Light it up!' },
-      { singer: 'Kitty', role: '根脉传承', text: '照亮未来！' },
-      { singer: 'Alicia (京腔)', role: '戏曲收尾', text: '【京腔高昂】点亮心灯，世世代代！', isHighlight: true },
-      { singer: '大合唱 (All Cast)', role: '全员腾空', text: '뛰어! (Jump!)', isHighlight: true }
+      { singer: '大合唱 (All Cast)', role: '全员腾空', text: '뛰어! (Jump!)', isHighlight: true },
+      { singer: 'Sam & Coco & Moon', role: '领舞三人组', text: "Hey! 薪火相传，Let's go!" },
+      { singer: '茵茵 & Kitty', role: '双人飞身', text: 'Jump! 灯火全开，Make it glow!' },
+      { singer: '大合唱 (All Cast)', role: '全员合唱', text: '一盏传 一盏一颗心，暖一颗心！', isHighlight: true },
+      { singer: '大合唱 (All Cast)', role: '全员终极大跳', text: '뛰어! (Jump!)', isHighlight: true }
     ]
   }
 ];

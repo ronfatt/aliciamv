@@ -119,57 +119,57 @@ export const initialProjectData = {
     {
       id: "char_moon",
       name: "Moon",
-      role: "主唱 · Intro 启航 · 唯美蓝调之声",
+      role: "主唱 · 世代记号 · 跨越南洋 · 唯美天籁",
       vibe: "Regal · Deep Emotion · Cobalt Blue · Silky Vocal",
-      tagline: "点燃第一盏灯火，引万千繁星共鸣",
+      tagline: "穿破天空的鞭炮，那是世代的记号",
       costume: "皇家钴蓝风琴褶长裙、飘带领结、气球袖、闪钻耳坠，端庄大气",
       image: "/characters/char_06_moon_hd.jpg",
       loraKeywords: "Moon, elegant Asian female singer, wavy dark brown hair, cobalt blue pleated silk evening gown, ribbon tie neck, long bishop sleeves, sparkling diamond drop earrings, singing into retro microphone",
-      lyricsPart: "【主唱 Intro 启航】Yeah, light it up! / 点燃这第一盏心灯，让善意穿透长夜..."
+      lyricsPart: "【主唱】穿破天空的鞭炮，那是世代的记号 / 阿公阿嬷牵过的手 / 跨越南洋的深海 / 照亮整个夜空"
     },
     {
       id: "char_coco",
       name: "Coco",
-      role: "主唱 · 街舞活力 · 嘻哈 Rap · Swag 担当",
+      role: "主唱 · 嘻哈开篇 · 舞狮 Swag · 街舞担当",
       vibe: "Be Real · Swag · Hip-hop · Never Lay Low",
-      tagline: "We never lay low / Swag 刻在血脉",
+      tagline: "We never lay low / 乘风破浪的先辈，Swag刻在血脉",
       costume: "Balenciaga 黑色宽松短袖、马丁靴、双编发、翡翠玉坠",
       image: "/characters/char_03_coco_hd.jpg",
       loraKeywords: "Coco, curvy Asian dancer, Balenciaga black oversized t-shirt, combat boots, double braids, jade necklace, hip-hop dynamic rap pose",
-      lyricsPart: "Yeah, light it up! / 舞狮鼓声传千里，We never lay low / 乘风破浪的先辈，Swag 刻在血脉"
+      lyricsPart: "【主唱】Yeah, light it up! / 舞狮鼓声传千里，We never lay low / 一桌菜等一年久 / 乘风破浪的先辈，Swag刻在血脉"
     },
     {
       id: "char_kitty",
       name: "Kitty",
-      role: "主唱 · 根脉深植 · 敬茶奉献 · 成熟大爱",
+      role: "主唱 · 准备好了没 · 敬茶礼仪 · 根脉深植",
       vibe: "Rooted · Resilient · Warm · Sincere",
-      tagline: "外面的风浪再大，根脉依然在心底绕",
+      tagline: "准备好了没？ / 外面的风浪再大，根脉依然在心底绕",
       costume: "黑色无袖立领衬衫、干练盘发带淡紫发圈、手臂纹身、双手稳重",
       image: "/characters/char_04_kitty_hd.jpg",
       loraKeywords: "Kitty, stylish Asian woman, sleeveless black mandarin collar shirt, arm tattoo, holding traditional hot Chinese tea cup, calm confident smile",
-      lyricsPart: "新年到 / 外面的风浪再大，根脉依然在心底绕 / 敬上一杯热茶，传承不只是一个 Title"
+      lyricsPart: "【主唱】新年到 / 提醒着我们珍惜 / 准备好了没？ / 一句好话、一次帮助、一个微笑的照面 / 敬上一杯热茶"
     },
     {
       id: "char_yinyin",
       name: "茵茵 (YIN YIN)",
-      role: "主唱 · 优雅旋转 · 慈爱温润 · 生命 Idol",
+      role: "主唱 · 红包祝福 · 优雅旋转 · 生命 Idol",
       vibe: "Grace · Elegance · Compassion · Light Bearer",
-      tagline: "Grace in every chapter / 点燃心灯",
+      tagline: "红包里的祝福，装满期待把你当成宝 / 做别人生命里的 Idol",
       costume: "白色短西装、黑色飘逸长裙、金色挑染、蝴蝶胸针、舒展舞姿",
       image: "/characters/char_02_yinyin_hd.jpg",
       loraKeywords: "Yin Yin, elegant woman, cropped white blazer, black flowing evening gown, ballet extension pose, holding warm glowing lantern light",
-      lyricsPart: "红包里的祝福，装满期待把你当成宝 / 原来最珍贵的福气，不是自己多耀眼，而是别人需要时候，你化身那道光线"
+      lyricsPart: "【主唱】红包里的祝福，装满期待把你当成宝 / 点燃心灯！/ 一盏灯火，绝对不只照亮一个屋檐 / 做别人生命里的 Idol"
     },
     {
       id: "char_sam",
       name: "Sam",
-      role: "主唱 · 现代舞动 · 南洋深海 · 青春燃力",
+      role: "主唱 · 现代舞动 · 每一份爱 · 沉稳依靠",
       vibe: "Energetic · Natural · Modern Movement · Passion",
-      tagline: "跨越南洋的深海，一路燃到这舞台",
+      tagline: "眼前每一份爱，都是我们一生的依靠",
       costume: "简约黑T、直筒修身牛仔裤、白球鞋、金色挑染公主半编发、圆环耳环",
       image: "/characters/char_05_sam_hd.jpg",
       loraKeywords: "Sam, athletic Asian dancer in black fitted t-shirt, blue jeans, white sneakers, hoop earrings, energetic jump and modern dance pose",
-      lyricsPart: "穿破天空的鞭炮，那是世代的记号 / 跨越南洋的深海，一路燃到这舞台"
+      lyricsPart: "【主唱】You know what to do / 眼前每一份爱，都是我们一生的依靠 / 曾有盏灯照亮我 / 能让寒冷冰封之地 瞬间切换成春天"
     }
   ],
 
@@ -230,32 +230,36 @@ export const initialProjectData = {
     {
       id: "SC-001",
       number: 1,
-      title: "【Intro 序章】龙鼓殿华灯初照 · 特邀京腔惊艳开门红",
+      title: "【Intro & 京腔】龙鼓殿华灯初照 · 5位主唱启航与Alicia惊艳开门红",
       timecode: "00:00 - 00:39",
       startSec: 0,
       endSec: 39,
 
-      lyricsSnippet: "Moon: '【Intro 独白引唱】点燃第一盏心灯，让善意穿透长夜...'\nCoco: 'Yeah, light it up!' (00:03)\nKitty: '新年到' (00:06)\n茵茵 & Sam: 'You know what to do' (00:08)\nAlicia (京腔): '红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！' (00:12-00:26)",
-      singerHighlight: "Alicia (特邀京腔领唱) · Moon (主唱) · Coco (主唱) · Kitty (主唱) · 茵茵 (主唱) · Sam (主唱)",
+      lyricsSnippet: `Coco: 'Yeah, light it up!' (00:03)
+Kitty & Moon: '新年到' (00:06)
+茵茵 & Sam: 'You know what to do' (00:08)
+Alicia (特邀京腔领唱): '红灯笼高挂，全城在欢呼！归家的导航，幸福已切入！' (00:12-00:26)`,
+      singerHighlight: "Coco (主唱) · Kitty & Moon (主唱) · 茵茵 & Sam (主唱) · Alicia (特邀京腔领唱)",
       suggestedEnvironment: "龙鼓殿 · 华丽殿堂与翡翠鼓阵主舞台",
       environmentId: "env_longgu_dian",
       participatingCast: [
-        { name: "Alicia", role: "特邀领唱 (京腔国粹 / 旦角身段)" },
-        { name: "Moon", role: "主唱 (Intro 启航 / 唯美之声)" },
-        { name: "Coco", role: "主唱 (街舞起范 / 嘻哈 Swag)" }
+        { name: "Coco", role: "主唱 (开篇律动起范 / 'Yeah, light it up!')" },
+        { name: "Kitty & Moon", role: "主唱 ('新年到' 甜酷双人同框)" },
+        { name: "茵茵 & Sam", role: "主唱 ('You know what to do' 默契卡点)" },
+        { name: "Alicia", role: "特邀领唱 (京腔国粹 / 旦角身段 / 殿堂中央高光亮相)" }
       ],
-      wardrobeNote: "Alicia 穿全新红丝唐装工装 / Moon 穿红丝唐装配钻石耳饰 / Coco 穿红色云纹短袖棒球夹克",
+      wardrobeNote: "全员首套：全新国潮嘻哈风 (Alicia 红丝唐装工装 / Coco 云纹棒球夹克 / Kitty 红色扣饰夹克 / Moon 红丝唐装 / 茵茵 连帽斜织带 / Sam 红黑格纹)",
 
       visualRequirements: [
-        "构图与机位：大广角低机位顺着龙鼓殿青砖地面向前推进，两层飞檐大殿华灯初上，巨型红金战鼓阵气势非凡",
-        "角色表演：Alicia 站在大殿中央昂首开唱京腔，神态端庄自信，手势精准还原京剧旦角手势",
-        "光影与特效：暖黄灯笼光芒与月色清辉在金漆战鼓上交相辉映，红灯笼高挂照亮归家导航"
+        "构图与机位：大广角由龙鼓殿青砖地面急速前推，双层飞檐大殿华灯初上；前奏接力后，大殿朱红大门缓缓洞开，升降摇臂推向中央至高台 Alicia",
+        "角色表演：Coco 率先律动起范；Kitty 与 Moon 相视一笑合唱；茵茵与 Sam 默契同框；Alicia 雍容端庄，起兰花指与旦角身段唱响高亢京腔",
+        "光影与特效：暖黄纸笼渐次亮起，与夜空冷月辉映；金漆战鼓反射璀璨光芒，红绸在鼓风机中凌空飘扬，全城红灯笼意象震撼开局"
       ],
 
       generatedOutput: {
         type: "image",
         imageUrl: "/environments/longgu_dian/日光下的华丽龙鼓殿堂.png",
-        caption: "AI 最终生成效果图：龙鼓殿华丽殿堂与战鼓陈列，京腔开唱引爆全片",
+        caption: "AI 最终生成效果图：龙鼓殿华丽殿堂与战鼓陈列，5位主唱启航与京腔引爆全片",
         modelEngine: "Flux.1 Pro + Midjourney v6.1",
         aspectRatio: "16:9 4K Cinema"
       },
@@ -270,7 +274,7 @@ export const initialProjectData = {
           title: "Prompt 提示词与指令",
           model: "Flux.1 Pro / Midjourney v6.1",
           prompt: "Cinematic shot of majestic traditional Chinese dragon drum hall at night, illuminated by golden warm paper lanterns, monumental red war drums, ancient wooden architectural beams, Alicia in stylish red Chinese jacket singing Peking opera pose --ar 16:9",
-          notes: "将开篇特邀京腔的气势通过华丽龙鼓殿与巨型战鼓具象化。"
+          notes: "将开篇5位主唱接力与特邀京腔的气势通过华丽龙鼓殿与巨型战鼓具象化。"
         },
         stage2_keyframe: {
           title: "出镜人物参考表",
@@ -305,24 +309,29 @@ export const initialProjectData = {
     {
       id: "SC-002",
       number: 2,
-      title: "【Verse 1 民俗与根脉】龙鼓殿夜幕鼓阵 · 醒狮卡点与红包祝福",
+      title: "【Verse 1 民俗与根脉】龙鼓殿夜幕鼓阵 · 穿破天空的鞭炮与根脉交织",
       timecode: "00:39 - 01:08",
       startSec: 39,
       endSec: 68,
 
-      lyricsSnippet: "Sam: '穿破天空的鞭炮，那是世代的记号' (00:40)\nCoco: '舞狮鼓声传千里，We never lay low' (00:48)\n茵茵: '红包里的祝福，装满期待把你当成宝' (00:55)\nKitty: '外面的风浪再大，根脉依然在心底绕' (01:02)",
-      singerHighlight: "Sam · Coco · 茵茵 · Kitty",
+      lyricsSnippet: `Moon: '穿破天空的鞭炮，那是世代的记号' (00:40)
+Coco & Sam: '舞狮鼓声传千里， We never lay low' (00:48)
+茵茵: '红包里的祝福，装满期待把你当成宝' (00:55)
+Kitty & Sam & Moon: '外面的风浪再大，根脉依然在心底绕' (01:02)`,
+      singerHighlight: "Moon (独唱) · Coco & Sam (双人) · 茵茵 (独唱) · Kitty & Sam & Moon (三人合唱)",
       suggestedEnvironment: "龙鼓殿 · 翡翠夜影鼓阵与大殿回廊",
       environmentId: "env_longgu_dian",
       participatingCast: [
-        { name: "Sam & Coco", role: "醒狮鼓点卡点跳跃与鼓阵街舞 Low Stance" },
-        { name: "茵茵 & Kitty", role: "双手送出精美烫金红包，温情凝望" }
+        { name: "Moon", role: "主唱 (Verse 1 独唱领起 / 战鼓与鞭炮世代记号)" },
+        { name: "Coco & Sam", role: "主唱 (醒狮鼓点卡点跳跃与双人 Low Stance 街舞)" },
+        { name: "茵茵", role: "主唱 (长廊暖灯双手送出烫金红包，温情凝望)" },
+        { name: "Kitty & Sam & Moon", role: "主唱 (主殿台阶前品字形并肩合唱，手按心口)" }
       ],
-      wardrobeNote: "Coco 穿云纹棒球夹克 / Sam 穿千鸟格露脐卫衣 / Kitty 穿红色扣饰短夹克 / 茵茵 穿斜织带连帽装",
+      wardrobeNote: "全新国潮嘻哈风 (Moon 红丝唐装 / Coco 云纹夹克 / Sam 红黑格纹 / 茵茵 连帽斜织带 / Kitty 扣饰夹克)",
 
       visualRequirements: [
-        "构图与机位：快节奏卡点剪辑（122 BPM），在翡翠青绿与暖金光影的巨型鼓阵间穿梭，舞狮与舞者同步起落",
-        "角色表演：Coco 戴翡翠项链双手摆出街舞手势，与身后大鼓互动；茵茵端庄递出红包，眼神充满关爱",
+        "构图与机位：快节奏卡点剪辑（122 BPM），在翡翠青绿与暖金光影的巨型鼓阵间穿梭，Moon 战鼓独唱、舞狮起落、茵茵红包特写流畅连贯",
+        "角色表演：Moon 眼神笃定气场全开；Coco 与 Sam 戴翡翠项链低重心卡点街舞；茵茵温情递出烫金红包；三人合唱坚毅手按胸口",
         "光影与特效：金色礼花火星飞散，鼓面红绸在气流中微颤，青砖地面反射华丽光晕"
       ],
 
@@ -349,8 +358,8 @@ export const initialProjectData = {
         stage2_keyframe: {
           title: "出镜人物参考表",
           mediaType: "image",
-          mediaUrl: "/characters/char_03_coco_hd.jpg",
-          notes: "Coco 拳击辫与翡翠挂坠标志。"
+          mediaUrl: "/characters/char_06_moon_hd.jpg",
+          notes: "Moon 面部特征与红丝唐装造型锁定基准。"
         },
         stage3_motion: {
           title: "动态推演样片",
@@ -375,18 +384,24 @@ export const initialProjectData = {
       startSec: 68,
       endSec: 86,
 
-      lyricsSnippet: "Coco: '一桌菜等一年久，就盼着这一刻来到' (01:09)\n茵茵: '一家团圆满屋欢笑，迎接新春多热闹' (01:13)\nKitty: '提醒着我们珍惜，把岁月紧紧抓牢' (01:17)\nSam: '眼前每一份爱，都是我们一生的依靠' (01:21)",
-      singerHighlight: "全员 4 人依次接唱 Rap 节奏",
+      lyricsSnippet: `Coco: '一桌菜等一年久，就盼着这一刻来到' (01:09)
+茵茵 & Moon: '一家团圆满屋欢笑，迎接新春多热闹' (01:13)
+Kitty & Coco: '提醒着我们珍惜，把岁月紧紧抓牢' (01:17)
+Sam: '眼前每一份爱，都是我们一生的依靠' (01:21)`,
+      singerHighlight: "Coco (独唱) · 茵茵 & Moon (双人) · Kitty & Coco (双人) · Sam (独唱)",
       suggestedEnvironment: "桃花源 · 世外仙源与石庭晨光",
       environmentId: "env_taohua_yuan",
       participatingCast: [
-        { name: "全员", role: "围坐桃花源石庭长席，笑逐颜开举杯相庆" }
+        { name: "Coco", role: "主唱 (石庭长席旁轻快 Rap 律动·盼望团聚)" },
+        { name: "茵茵 & Moon", role: "主唱 (并肩而坐添汤夹菜，满屋欢声笑语)" },
+        { name: "Kitty & Coco", role: "主唱 (轻抚老相册与长辈之手，动情合唱)" },
+        { name: "Sam", role: "主唱 (端坐石案深情凝望全场，沉稳总结)" }
       ],
-      wardrobeNote: "全员《中国风盛典华章》系列 (朱红马面、云肩舞裙、桃枝旗袍)",
+      wardrobeNote: "切换至第二套：《中国风盛典华章》新中式典雅旗袍与汉服系列 (朱红马面、云肩舞裙、桃枝旗袍)",
 
       visualRequirements: [
         "构图与机位：平稳滑轨推镜（Steadicam），顺着桃花源石庭长案缓缓扫过冒着热气的年夜饭与青瓷茶具",
-        "角色表演：家人笑逐颜开相互夹菜举杯，Kitty 颔首微笑，眼神满是对阖家团聚的珍惜与感慨",
+        "角色表演：家人笑逐颜开相互夹菜举杯，Coco 爽朗说唱，茵茵与 Moon 亲切相视，Sam 眼神满是对阖家团聚的珍惜与依靠",
         "光影与特效：晨光斜穿桃花粉樱枝桠，菜肴上方蒸腾出白色的袅袅热气，充满人间烟火气"
       ],
 
@@ -414,7 +429,7 @@ export const initialProjectData = {
           title: "出镜人物参考表",
           mediaType: "image",
           mediaUrl: "/characters/char_02_yinyin_hd.jpg",
-          notes: "茵茵端庄优雅笑容。"
+          notes: "茵茵与 Moon 端庄优雅笑容。"
         },
         stage3_motion: {
           title: "动态推演样片",
@@ -439,18 +454,25 @@ export const initialProjectData = {
       startSec: 86,
       endSec: 116,
 
-      lyricsSnippet: "Coco & Sam: '阿公阿嬷牵过的手，这份温暖我收好' (01:27)\n茵茵 & Kitty: '那些接力过的爱，点亮前路的破晓' (01:34)\nCoco & Sam: '曾有盏灯照亮我，穿过狂雨和风暴' (01:41)\n茵茵 & Kitty: 'Now it's my turn, 把黑暗都燃烧' (01:49)\nKitty: '准备好了没？' (01:56)",
-      singerHighlight: "Coco & Sam / 茵茵 & Kitty 轮唱与二重唱",
+      lyricsSnippet: `Coco & Moon: '阿公阿嬷牵过的手，这份温暖我收好' (01:27)
+茵茵 & Kitty: '那些接力过的爱，点亮前路的破晓' (01:34)
+Coco & Sam: '曾有盏灯照亮我，穿过狂雨和风暴' (01:41)
+茵茵 & Kitty & Moon & Sam: 'Now it's my turn，把黑暗都燃烧' (01:49)
+Kitty: '准备好了没？' (01:56)`,
+      singerHighlight: "Coco & Moon · 茵茵 & Kitty · Coco & Sam · 四人合力爆发 ➔ Kitty 单人定音",
       suggestedEnvironment: "桃花源 · 清澈溪桥与晨雾落英",
       environmentId: "env_taohua_yuan",
       participatingCast: [
-        { name: "老阿公阿嬷 (剪影演员)", role: "长满老茧的手温柔握住年轻人的手" },
-        { name: "Kitty", role: "在溪桥上捧起第一盏心灯并沉稳发问" }
+        { name: "Coco & Moon", role: "主唱 (桥头抚摸长辈手心，温情二重唱)" },
+        { name: "茵茵 & Kitty", role: "主唱 (清溪石径心灯初次交接)" },
+        { name: "Coco & Sam", role: "主唱 (风暴穿行记忆回首)" },
+        { name: "茵茵 & Kitty & Moon & Sam", role: "主唱 (4人桥头并肩爆发誓言)" },
+        { name: "Kitty", role: "主唱 ('准备好了没？' 绝美单人超大特写)" }
       ],
-      wardrobeNote: "Kitty 穿朱红马面裙 / 茵茵 穿绣金云肩裙 / Coco & Sam 穿中国风舞装",
+      wardrobeNote: "《中国风盛典华章》 (Kitty 朱红马面裙 / 茵茵 绣金云肩裙 / Moon 桃枝金绣 / Coco & Sam 雅致立领汉服)",
 
       visualRequirements: [
-        "构图与机位：诗意摇镜，由古木溪桥上交握的手部特写慢慢移向桃花溪畔晨光微透的天空，再切至 Kitty 毅然捧起心灯的大特写",
+        "构图与机位：诗意摇镜，由古木溪桥上交握的手部特写慢慢移向桃花溪畔晨光微透的天空，4人合唱汇聚，最后急推至 Kitty 超大特写",
         "角色表演：眼神从含泪感恩逐渐转为无比笃定，最后那句独白‘准备好了没？’气场震慑全场",
         "光影与特效：晨曦穿透晨雾洒在清溪流水与落英上，心灯金光泛起，照亮人物坚毅的面庞"
       ],
@@ -504,19 +526,28 @@ export const initialProjectData = {
       startSec: 116,
       endSec: 145,
 
-      lyricsSnippet: "茵茵 & Kitty: '点燃心灯！' Coco & Sam: '(Light it up!)' (01:57)\n茵茵 & Kitty: '照亮整个夜空！' (02:00)\n茵茵 & Kitty: '点燃心灯！' Coco & Sam: '(Pass it on!)' (02:04)\n茵茵 & Kitty: '善意无限接通！' (02:08)\n大合唱: '万千新年灯火连成 千家万户的希望 / 我的光，你的光，这份温暖，世世代代相传！' (02:11-02:25)",
-      singerHighlight: "领唱对答 ➔ 震撼全员大合唱",
+      lyricsSnippet: `茵茵 & Kitty & Moon: '点燃心灯！' (01:57)
+Coco & Sam: 'Light it up!' (01:59)
+茵茵 & Kitty & Moon: '照亮整个夜空！' (02:00)
+茵茵 & Kitty & Moon: '点燃心灯！' (02:04)
+Coco & Sam: 'Pass it on!' (02:06)
+茵茵 & Kitty & Moon: '善意无限接通！' (02:08)
+大合唱: '万千新年灯火连成 千家万户的希望' (02:11)
+茵茵 & Sam / Kitty & Coco & Moon: '我的光 / 你的光' (02:18)
+大合唱: '这份温暖，世世代代相传' (02:21-02:25)`,
+      singerHighlight: "对唱组 (茵茵&Kitty&Moon 对 Coco&Sam) ➔ 全员大合唱 (我的光/你的光交错)",
       suggestedEnvironment: "桃花源 · 桃花溪畔石上天然舞台",
       environmentId: "env_taohua_yuan",
       participatingCast: [
-        { name: "茵茵", role: "双手托起金光心灯优雅旋转" },
-        { name: "全员 6 人", role: "做统一‘托灯 Pass it on’手势接力" }
+        { name: "茵茵 & Kitty & Moon", role: "主唱 (三人领唱组·巨石托灯优雅旋转)" },
+        { name: "Coco & Sam", role: "主唱 (双人对答组·两岸力量卡点起跃)" },
+        { name: "全员 6 人", role: "全员 (大合唱·我的光/你的光光柱汇聚)" }
       ],
       wardrobeNote: "选定《中国风盛典华章》 (绣金云肩红舞裙在桃花溪畔旋转盛放)",
 
       visualRequirements: [
-        "构图与机位：360度环绕升降运镜（Orbit Upwards），从茵茵捧着心灯的手部特写逐渐拉出至桃花溪畔巨石舞台",
-        "角色表演：茵茵在溪流巨石上舒展旋转，随后将心灯平推向镜头，微光化为漫天金色光点洒入粉色桃花雨中",
+        "构图与机位：360度环绕升降运镜（Orbit Upwards），从三人捧着心灯的手部特写逐渐拉出至桃花溪畔巨石舞台与两岸卡点对答",
+        "角色表演：茵茵、Kitty、Moon在溪流巨石上舒展旋转；Coco 与 Sam 力量感跳跃呼应；全员分屏推光汇聚",
         "光影与特效：晨光穿透花海，溪水泛起粼粼金光，心灯微粒如萤火虫般漫天飞舞，纯洁神圣"
       ],
 
@@ -564,23 +595,32 @@ export const initialProjectData = {
     {
       id: "SC-006",
       number: 6,
-      title: "【Rap 2 大爱心灯】龙鼓殿夜色通明 · 一盏灯火化身那道光线",
+      title: "【Rap 2 大爱心灯】龙鼓殿夜色通明 · 6行大爱金句递进与化身光线",
       timecode: "02:25 - 02:50",
       startSec: 145,
       endSec: 170,
 
-      lyricsSnippet: "茵茵: '一盏灯火，绝对不只照亮一个屋檐' (02:25)\nCoco: '这份大爱，注定能够走到无限遥远' (02:30)\nKitty: '一句好话、一次帮助、一个微笑的照面' (02:33)\nSam: '能让寒冷冰封之地，瞬间切换成春天' (02:36)\n茵茵: '原来最珍贵的福气，不是自己多耀眼' (02:40)\nCoco & Sam: '而是别人需要时候，你化身那道光线' (02:44)",
-      singerHighlight: "茵茵 · Coco · Kitty · Sam 轮流特写递进",
+      lyricsSnippet: `茵茵: '一盏灯火，绝对不只照亮一个屋檐' (02:25)
+Coco: '这份大爱，注定能够走到无限遥远' (02:30)
+Kitty: '一句好话、一次帮助、一个微笑的照面' (02:33)
+Sam & Moon: '能让寒冷冰封之地 瞬间切换成春天' (02:36)
+茵茵 & Kitty: '原来最珍贵的福气，不是自己多耀眼' (02:40)
+Coco & Sam & Moon: '而是别人需要时候，你化身那道光线' (02:44)`,
+      singerHighlight: "茵茵 ➔ Coco ➔ Kitty ➔ Sam & Moon ➔ 茵茵 & Kitty ➔ Coco & Sam & Moon",
       suggestedEnvironment: "龙鼓殿 · 暖灯冷月下的鼓厅",
       environmentId: "env_longgu_dian",
       participatingCast: [
-        { name: "茵茵", role: "眼神充满慈爱大爱，走入金色灯影下" },
-        { name: "Coco & Sam", role: "自信对视，双手向前递出温暖微光" }
+        { name: "茵茵", role: "主唱 (长廊漫步虚托微光，慈悲大爱)" },
+        { name: "Coco", role: "主唱 (自信步伐极目远眺，无限遥远)" },
+        { name: "Kitty", role: "主唱 (侧颜微笑轻抚镜头，如沐春风)" },
+        { name: "Sam & Moon", role: "主唱 (双人并肩，冷调瞬间切换漫堂暖金春天)" },
+        { name: "茵茵 & Kitty", role: "主唱 (双人依偎步下台阶，明悟真谛)" },
+        { name: "Coco & Sam & Moon", role: "主唱 (三人核心平推璀璨金色光束)" }
       ],
-      wardrobeNote: "全员全新国潮嘻哈工装 (红丝唐装 / 露脐格纹 / 棒球夹克)",
+      wardrobeNote: "全新国潮嘻哈风 (红丝唐装 / 云纹夹克 / 红黑格纹 / 扣饰夹克 / 斜织带)",
 
       visualRequirements: [
-        "构图与机位：四人快速单人中景特写切换，背景虚化为龙鼓殿高阁的暖红灯笼光斑，在'化身那道光线'时合为双人中景",
+        "构图与机位：六人层次分明的快速单人/双人/三人特写切换，背景虚化为龙鼓殿高阁的暖红灯笼光斑，最后汇聚为三人平推金光",
         "角色表演：每个人的眼神从内敛微笑到开朗笃定，将大爱慈悲的温度传达给镜头前的观众",
         "光影与特效：随着'瞬间切换成春天'的唱词，冷调夜影瞬间被暖金灯影充盈，鼓殿流光溢彩"
       ],
@@ -629,25 +669,29 @@ export const initialProjectData = {
     {
       id: "SC-007",
       number: 7,
-      title: "【Verse 2 南洋深海与敬茶】龙鼓殿月影大堂 · 乘风破浪的先辈",
+      title: "【Verse 2 南洋深海与敬茶】龙鼓殿月影大堂 · 跨越南洋深海与敬茶传承",
       timecode: "02:50 - 03:33",
       startSec: 170,
       endSec: 213,
 
-      lyricsSnippet: "Sam: '跨越南洋的深海，一路燃到这舞台' (03:05)\nCoco: '乘风破浪的先辈，Swag 刻在血脉' (03:12)\nKitty: '敬上一杯热茶，传承不只是一个 Title' (03:19)\n茵茵: '化作那一道光芒，做别人生命里的 Idol' (03:26)",
-      singerHighlight: "Sam (燃舞) · Coco (Swag) · Kitty (茶道) · 茵茵 (Idol 高光)",
+      lyricsSnippet: `Moon & Sam: '跨越南洋的深海，一路燃到这舞台' (03:05)
+Coco & 茵茵: '乘风破浪的先辈，Swag刻在血脉' (03:12)
+Kitty & Sam: '敬上一杯热茶，传承不只是一个 Title' (03:19)
+茵茵 & Moon: '化作那一道光芒，做别人生命里的 Idol' (03:26)`,
+      singerHighlight: "Moon & Sam · Coco & 茵茵 · Kitty & Sam (敬茶) · 茵茵 & Moon (Idol 升华)",
       suggestedEnvironment: "龙鼓殿 · 月光与琥珀灯影中的中式大堂",
       environmentId: "env_longgu_dian",
       participatingCast: [
-        { name: "Sam & Coco", role: "跨越南洋深海的蓬勃动能" },
-        { name: "Kitty", role: "龙鼓案前庄重端茶敬茶仪式特写" },
-        { name: "茵茵", role: "做别人生命里的 Idol 圣洁姿态" }
+        { name: "Moon & Sam", role: "主唱 (深海波光倒影中背靠背史诗亮相)" },
+        { name: "Coco & 茵茵", role: "主唱 (街头 Swag 与国风身段碰撞)" },
+        { name: "Kitty & Sam", role: "主唱 (红木案前双手平举茶盅庄重敬热茶)" },
+        { name: "茵茵 & Moon", role: "主唱 (高阁凭栏相视而唱，做生命里的 Idol)" }
       ],
-      wardrobeNote: "Kitty 穿朱红马面裙 / Coco 穿唐装阔腿裤 / Sam 穿绯红汉服",
+      wardrobeNote: "《中国风盛典华章》新中式典雅礼服 (Kitty 朱红马面裙敬茶 / 茵茵 绣金云肩 / Moon 雅致立领)",
 
       visualRequirements: [
         "构图与机位：大堂飞檐雕花长廊深处，镜头由宏阔鼓厅缓缓推向红木大案，特写 Kitty 双手平举敬茶的端庄神情",
-        "角色表演：Kitty 眼神恭敬庄严，向先辈与天地敬茶；茵茵在'Idol'高音处微仰起头，琥珀灯影映亮全身",
+        "角色表演：Kitty 眼神恭敬庄严，向先辈与天地敬茶；茵茵与 Moon 在'Idol'高音处凭栏仰首，琥珀灯影映亮全身",
         "光影与特效：热茶水汽袅袅升起，在青铜战鼓与金色灯影中化作璀璨微尘，呈现最高规格东方传承意境"
       ],
 
@@ -695,23 +739,30 @@ export const initialProjectData = {
     {
       id: "SC-008",
       number: 8,
-      title: "【Chorus 2 & 3 浩瀚盛典】桃花源落英晨光 · 照亮浩瀚彼岸！众生觉心",
+      title: "【Chorus 2 & 扩展 浩瀚盛典】桃花源落英晨光 · 众生觉心与照亮浩瀚彼岸",
       timecode: "03:34 - 04:29",
       startSec: 213,
       endSec: 269,
 
-      lyricsSnippet: "大合唱: '点燃心灯！(Light it up!) 照亮浩瀚彼岸！' (04:02)\n'点燃心灯！(Pass it on!) 众生觉心点亮！' (04:09)\n'感恩过去修正现在，创造未来的光芒' (04:16)\n'慈爱光，智慧光，清明闪耀，照见生命破晓！' (04:23-04:29)",
-      singerHighlight: "全员大合唱最高音升调爆发",
+      lyricsSnippet: `大合唱: '点燃心灯！(Light it up!) 照亮整个夜空！' (03:35)
+大合唱: '点燃心灯！(Pass it on!) 善意无限接通！' (03:42)
+大合唱: '万千新年灯火连成 千家万户的希望 / 我的光，你的光 / 这份温暖，世世代代相传' (03:49)
+【扩展高潮】大合唱: '点燃心灯！(Light it up!) 照亮浩瀚彼岸！' (04:02)
+【扩展高潮】大合唱: '点燃心灯！(Pass it on!) 众生觉心点亮！' (04:09)
+【扩展高潮】大合唱: '感恩过去修正现在，创造未来的光芒' (04:16)
+【扩展高潮】大合唱: '慈爱光 智慧光 / 清明闪耀 照见生命破晓' (04:23-04:29)`,
+      singerHighlight: "全员 6 位主角 (Alicia 特邀领唱 + 5位主唱) 终极升调大合唱",
       suggestedEnvironment: "桃花源 · 桃花溪畔晨光大舞台",
       environmentId: "env_taohua_yuan",
       participatingCast: [
-        { name: "全员 6 位主角", role: "红金盛典华服，并肩立于桃花溪畔" }
+        { name: "Alicia", role: "特邀领唱 (居中引领全员庄严启航)" },
+        { name: "Moon · Coco · Kitty · 茵茵 · Sam", role: "5位主唱 (全员盛典华服·双手托灯·点亮浩瀚彼岸)" }
       ],
-      wardrobeNote: "全员《中国风盛典华章》 (重工金线在晨曦中划出璀璨光芒)",
+      wardrobeNote: "全员《中国风盛典华章》顶级高定 (重工金线在晨曦中熠熠生辉)",
 
       visualRequirements: [
         "构图与机位：大广角航拍无人机超大远景，自桃花源清溪上空掠过，仰冲向满天红霞与万千升腾的心灯",
-        "角色表演：6 位女性在桃花盛放的溪岸并肩定格，红衣与粉桃绿水形成鲜明对比，双手放飞无数盏金色心灯",
+        "角色表演：Alicia 居中，5 位主唱在桃花盛放的溪岸并肩定格，红衣与粉桃绿水形成鲜明对比，双手放飞无数盏金色心灯",
         "光影与特效：晨光万丈穿透薄雾，数千盏心灯漂浮升向苍穹，溪水泛金，漫天落英飞舞"
       ],
 
@@ -764,8 +815,12 @@ export const initialProjectData = {
       startSec: 269,
       endSec: 289,
 
-      lyricsSnippet: "全员呼喊: '뛰어! (Jump!)' (04:30)\nSam & Coco: 'Hey! 薪火相传，Let's go!' (04:31)\n茵茵 & Kitty: 'Jump! 灯火全开，Make it glow!' (04:34)\n大合唱: '一盏传一盏，一颗心暖一颗心！' (04:37)\n全员终极大喊: '뛰어! (Jump!)' (04:40-04:49)",
-      singerHighlight: "全员 6 人同步滞空起跳狂欢",
+      lyricsSnippet: `大合唱: '뛰어! (Jump!)' (04:30)
+Sam & Coco & Moon: 'Hey! 薪火相传，Let's go!' (04:31)
+茵茵 & Kitty: 'Jump! 灯火全开，Make it glow!' (04:34)
+大合唱: '一盏传 一盏一颗心，暖一颗心！' (04:37)
+大合唱: '뛰어! (Jump!)' (04:40-04:49)`,
+      singerHighlight: "大合唱 ➔ Sam & Coco & Moon ➔ 茵茵 & Kitty ➔ 全员 6 人 120fps 慢动作大跳跃定格",
       suggestedEnvironment: "龙鼓殿 · 月夜中国鼓堂主舞台",
       environmentId: "env_longgu_dian",
       participatingCast: [
